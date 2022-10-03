@@ -1,0 +1,5 @@
+max_digit: 3
+max_tries: 10
+adv_mode: False
+set: "1234567890"
+adv_set: "1234567890abcdef"

@@ -1,27 +1,26 @@
-from Modules import Generator, Checker
+from Modules import Generator, Checker, CfgManager
 
 
 def main():
-    MAX_LETTERS = 3
-    MAX_TRIES = 10
-    ADV_MODE = False
+    config_file = 'settings/main.yaml'
+    config = CfgManager.load_conf(config_file)
 
-    word = Generator(MAX_LETTERS).generate()
+    word = Generator(config['max_digit']).generate()
     print(
-        f"Hello. There is Bagles game. You have to guess hidden number. You have only {MAX_TRIES} tries. Have a luck")
-    while True and MAX_TRIES:
-        if MAX_TRIES == 1:
+        f"Hello. There is Bagles game. You have to guess hidden number. You have only {config['max_tries']} tries. Have a luck")
+    while True and config['max_tries']:
+        if config['max_tries'] == 1:
             print(f"You have last try")
         else:
-            print(f"You have {MAX_TRIES} tries")
+            print(f"You have {config['max_tries']} tries")
         test = input('> ')
         result = Checker.check(word, test)
         if result == ['Pico', 'Pico', 'Pico']:
-            print(f"You won with {10 - MAX_TRIES} tries")
+            print(f"You won with {10 - config['max_tries']} tries")
             break
         else:
             print(result)
-            MAX_TRIES -= 1
+            config['max_tries'] -= 1
     print(f"Guessed number was {word}")
     print("Thanks for game")
 
