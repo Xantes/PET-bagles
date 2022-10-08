@@ -1,28 +1,29 @@
-from Modules import Generator, Checker, CfgManager
+from Modules import Generator, Checker, CfgManager, language_factory
 
 
 def main():
     config_file = 'settings/main.yaml'
     config = CfgManager.load_conf(config_file)
+    language_file = language_factory.provide_language(config['language'])
+    language = CfgManager.load_conf(language_file)
 
     word = Generator(config['max_digit']).generate()
-    print(
-        f"Hello. There is Bagles game. You have to guess hidden number. You have only {config['max_tries']} tries. Have a luck")
+    print(language['hello_msg'].format(config['max_tries']))
     while True and config['max_tries']:
         if config['max_tries'] == 1:
-            print(f"You have last try")
+            print(language['last_try'])
         else:
-            print(f"You have {config['max_tries']} tries")
+            print(language['tries_count'].format(config['max_tries']))
         test = input('> ')
-        result = Checker.check(word, test)
-        if result == ['Pico', 'Pico', 'Pico']:
-            print(f"You won with {10 - config['max_tries']} tries")
+        if test == word:
+            print(language['win_msg'].format(10 - config['max_tries']))
             break
         else:
+            result = Checker.check(word, test)
             print(result)
             config['max_tries'] -= 1
-    print(f"Guessed number was {word}")
-    print("Thanks for game")
+    print(language['fail_msg'].format(word))
+    print(language['final_msg'])
 
 
 if __name__ == '__main__':

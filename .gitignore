@@ -4,3 +4,5 @@ Lib/
 pyvenv.cfg
 Scripts/
 */__pycache__
+*/__pycache__/*
+Modules/__pycache__/__init__.cpython-39.pyc
