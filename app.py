@@ -10,32 +10,32 @@ def main():
     logger.info('App start')
 
     config_file = os.getenv('MAIN_CFG', None)
-    config = CfgManager.load_conf(config_file)
-    language_file = language_factory.provide_language(config['language'])
-    language = CfgManager.load_conf(language_file)
+    cfg = CfgManager(cfg_file=config_file)
+    language_file = language_factory.provide_language(cfg.config['language'])
+    cfg.load_conf(language_file)
 
-    word = Generator(set=config['set'],
-                     max_letters=config['max_letters']).generate()
-    print(language['hello_msg'].format(config['max_tries']))
-    while True and config['max_tries']:
-        if config['max_tries'] == 1:
-            print(language['last_try'])
+    word = Generator(set=cfg.config['set'],
+                     max_letters=cfg.config['max_letters']).generate()
+    print(cfg.config['hello_msg'].format(cfg.config['max_tries']))
+    while True and cfg.config['max_tries']:
+        if cfg.config['max_tries'] == 1:
+            print(cfg.config['last_try'])
         else:
-            print(language['tries_count'].format(config['max_tries']))
+            print(cfg.config['tries_count'].format(cfg.config['max_tries']))
         test = input('> ')
         if test == word:
-            print(language['win_msg'].format(10 - config['max_tries']))
+            print(cfg.config['win_msg'].format(10 - cfg.config['max_tries']))
             break
         else:
             result = Checker.check(word, test)
             print(result)
-            config['max_tries'] -= 1
-    if not config['max_tries']:
-        print(language['fail_msg'].format(word))
+            cfg.config['max_tries'] -= 1
+    if not cfg.config['max_tries']:
+        print(cfg.config['fail_msg'].format(word))
 
     logger.info('Game ends')
 
-    print(language['final_msg'])
+    print(cfg.config['final_msg'])
 
 
 if __name__ == '__main__':
