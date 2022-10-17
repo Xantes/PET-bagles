@@ -1,16 +1,23 @@
 from Modules import Generator, Checker, CfgManager, language_factory
-from Modules import logging_setup
+# from Modules import logging_setup
 import logging
 import os
 
 
 def main():
-    logging_setup()
+    # logging_setup()
     logger = logging.getLogger(__name__)
     logger.info('App start')
 
     config_file = os.getenv('MAIN_CFG', None)
-    cfg = CfgManager(cfg_file=config_file)
+    default_conf = {
+        'max_digit': 3,
+        'max_tries': 10,
+        'adv_mode': False,
+        'set': '1234567890',
+        'language': 'English',
+    }
+    cfg = CfgManager(cfg_file=config_file, default_conf=default_conf)
     language_file = language_factory.provide_language(cfg.config['language'])
     cfg.load_conf(language_file)
 

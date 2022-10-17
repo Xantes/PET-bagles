@@ -4,8 +4,9 @@ import os
 
 
 class CfgManager():
-    def __init__(self, cfg_file=None) -> None:
+    def __init__(self, cfg_file=None, default_conf=None) -> None:
         self.config = None
+        self.default_conf = default_conf
         self.logger = logging.getLogger(__name__)
         if cfg_file:
             if os.path.exists(cfg_file):
@@ -20,13 +21,7 @@ class CfgManager():
 
     def load_default_conf(self):
         if not self.config:
-            self.config = {
-                'max_digit': 3,
-                'max_tries': 10,
-                'adv_mode': False,
-                'set': '1234567890',
-                'language': 'English',
-            }
+            self.config = self.default_conf
 
     def load_conf(self, file):
         try:
