@@ -5,7 +5,7 @@ pyvenv.cfg
 Scripts/
 */__pycache__
 */__pycache__/
-Modules/__pycache__/__init__.cpython-39.pyc
+Modules/__pycache__/*
 *.pyc
 __pycache__/
 .pytest_cache/
@@ -13,3 +13,4 @@ __pycache__/
 Scripts/
 .env
 pyvenv.cfg
+**/__pycache__
