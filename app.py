@@ -1,11 +1,11 @@
 from Modules import Generator, Checker, CfgManager, language_factory
-# from Modules import logging_setup
+from Modules import logging_setup
 import logging
 import os
 
 
 def main():
-    # logging_setup()
+    logging_setup()
     logger = logging.getLogger(__name__)
     logger.info('App start')
 
