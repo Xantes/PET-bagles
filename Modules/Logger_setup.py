@@ -4,7 +4,7 @@ import logging.config
 import logging
 
 
-def logging_setup(default_path='settings\log.yml', default_level=logging.INFO, env_key='LOG_CFG'):
+def logging_setup(default_path='settings/log.yml', default_level=logging.INFO, env_key='LOG_CFG'):
     value = os.getenv(env_key, None)
     if value:
         default_path = value

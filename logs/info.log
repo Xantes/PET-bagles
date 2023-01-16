@@ -1,0 +1,11 @@
+2023-01-16 11:49:03,755 - __main__ - INFO - App start
+2023-01-16 11:49:03,756 - Modules.Cfgmanager - ERROR - Config doesn't set. Used default
+2023-01-16 11:49:03,756 - Modules.Cfgmanager - INFO - Config_file: languages/english.yaml succefully load
+2023-01-16 11:49:57,577 - __main__ - INFO - Game ends
+2023-01-16 11:52:53,368 - __main__ - INFO - App start
+2023-01-16 11:52:53,370 - Modules.Cfgmanager - INFO - Config_file: settings/main.yml succefully load
+2023-01-16 11:52:53,372 - Modules.Cfgmanager - INFO - Config_file: languages/english.yaml succefully load
+2023-01-16 11:53:01,692 - __main__ - INFO - App start
+2023-01-16 11:54:02,934 - Modules.Cfgmanager - INFO - Config_file: settings/main.yml succefully load
+2023-01-16 11:54:08,435 - __main__ - INFO - App start
+2023-01-16 11:55:26,687 - Modules.Cfgmanager - INFO - Config_file: settings/main.yml succefully load

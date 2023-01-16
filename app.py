@@ -17,6 +17,7 @@ def main():
         'set': '1234567890',
         'language': 'English',
     }
+    
     cfg = CfgManager(cfg_file=config_file, default_conf=default_conf)
     language_file = language_factory.provide_language(cfg.config['language'])
     cfg.load_conf(language_file)
