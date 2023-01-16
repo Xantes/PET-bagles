@@ -11,7 +11,7 @@ def main():
 
     config_file = os.getenv('MAIN_CFG', None)
     default_conf = {
-        'max_digit': 3,
+        'max_letters': 3,
         'max_tries': 10,
         'adv_mode': False,
         'set': '1234567890',

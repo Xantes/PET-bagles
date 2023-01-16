@@ -1,0 +1,4 @@
+2023-01-06 13:52:21,421 - __main__ - INFO - App start
+2023-01-06 13:52:21,423 - Modules.Cfgmanager - INFO - Config_file: settings/main.yml succefully load
+2023-01-06 13:52:21,425 - Modules.Cfgmanager - INFO - Config_file: languages/english.yaml succefully load
+2023-01-06 13:56:42,942 - __main__ - INFO - Game ends
