@@ -9,3 +9,584 @@
 2023-01-16 11:54:02,934 - Modules.Cfgmanager - INFO - Config_file: settings/main.yml succefully load
 2023-01-16 11:54:08,435 - __main__ - INFO - App start
 2023-01-16 11:55:26,687 - Modules.Cfgmanager - INFO - Config_file: settings/main.yml succefully load
+2023-01-16 12:36:25,115 - app - INFO - App start
+2023-01-16 12:36:25,115 - Modules.Cfgmanager - ERROR - Config doesn't set. Used default
+2023-01-16 12:36:25,116 - Modules.Cfgmanager - INFO - Config_file: languages/english.yaml succefully load
+2023-01-16 12:48:25,768 - app - INFO - App start
+2023-01-16 12:48:25,768 - Modules.Cfgmanager - ERROR - Config doesn't set. Used default
+2023-01-16 12:48:25,769 - Modules.Cfgmanager - INFO - Config_file: languages/english.yaml succefully load
+2023-01-16 12:48:35,993 - app - INFO - App start
+2023-01-16 12:48:35,993 - Modules.Cfgmanager - ERROR - Config doesn't set. Used default
+2023-01-16 12:48:35,994 - Modules.Cfgmanager - INFO - Config_file: languages/english.yaml succefully load
+2023-01-16 13:21:34,326 - __main__ - ERROR - connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2023-01-16 13:24:40,673 - __main__ - ERROR - connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2023-01-16 13:28:12,371 - __main__ - ERROR - connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2023-01-16 13:31:20,045 - __main__ - ERROR - connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2023-01-16 13:32:50,361 - __main__ - ERROR - connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2023-01-16 13:33:10,198 - __main__ - ERROR - connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2023-01-16 13:38:01,102 - __main__ - ERROR - connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2023-01-16 13:39:30,079 - __main__ - INFO - Connection with db closed
+2023-01-17 10:03:37,496 - __main__ - ERROR - database "test_db" already exists
+
+2023-01-17 10:03:37,496 - __main__ - INFO - Connection with db closed
+2023-01-17 11:10:55,653 - __main__ - ERROR - could not translate host name "locahost" to address: nodename nor servname provided, or not known
+
+2023-01-17 11:14:46,728 - __main__ - ERROR - argument 1 must be a string or unicode object: got tuple instead
+2023-01-17 11:14:46,728 - __main__ - INFO - Connection with database closed
+2023-01-17 11:14:51,661 - __main__ - ERROR - argument 1 must be a string or unicode object: got tuple instead
+2023-01-17 11:14:51,661 - __main__ - INFO - Connection with database closed
+2023-01-17 11:16:11,844 - __main__ - ERROR - argument 1 must be a string or unicode object: got tuple instead
+2023-01-17 11:16:11,844 - __main__ - INFO - Connection with database closed
+2023-01-17 11:22:20,018 - __main__ - ERROR - argument 1 must be a string or unicode object: got tuple instead
+2023-01-17 11:22:21,862 - __main__ - INFO - Connection with database closed
+2023-01-17 11:24:12,928 - __main__ - INFO - Connection with database closed
+2023-01-17 11:26:19,349 - __main__ - ERROR - database "bagles_db" already exists
+
+2023-01-17 11:26:20,089 - __main__ - INFO - Connection with database closed
+2023-01-17 11:32:07,616 - __main__ - INFO - Database bagles_db already exists
+2023-01-17 11:32:07,617 - __main__ - ERROR - syntax error at or near "\"
+LINE 1: \c bagles_db
+        ^
+
+2023-01-17 11:32:07,617 - __main__ - INFO - Connection with database closed
+2023-01-17 11:42:55,023 - __main__ - INFO - App start
+2023-01-17 11:42:55,023 - Modules.Cfgmanager - ERROR - Config doesn't set. Used default
+2023-01-17 11:42:55,024 - Modules.Cfgmanager - INFO - Config_file: languages/english.yaml succefully load
+2023-02-18 16:56:51,267 - application.game - INFO - App start
+2023-02-18 16:56:51,286 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-18 16:56:51,286 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-18 16:56:51,286 - werkzeug - INFO -  * Restarting with stat
+2023-02-18 16:56:51,605 - application.game - INFO - App start
+2023-02-18 16:56:51,615 - werkzeug - WARNING -  * Debugger is active!
+2023-02-18 16:56:51,621 - werkzeug - INFO -  * Debugger PIN: 115-487-645
+2023-02-18 16:57:22,521 - werkzeug - INFO - 127.0.0.1 - - [18/Feb/2023 16:57:22] "[32mGET / HTTP/1.1[0m" 302 -
+2023-02-18 16:57:22,536 - werkzeug - INFO - 127.0.0.1 - - [18/Feb/2023 16:57:22] "GET /new_game HTTP/1.1" 200 -
+2023-02-18 16:57:38,818 - werkzeug - INFO - 127.0.0.1 - - [18/Feb/2023 16:57:38] "GET /new_game HTTP/1.1" 200 -
+2023-02-18 16:58:04,697 - werkzeug - INFO -  * Detected change in '/Users/zakhar/code/PET-bagles/application/views.py', reloading
+2023-02-18 16:58:04,765 - werkzeug - INFO -  * Restarting with stat
+2023-02-18 16:58:05,202 - application.game - INFO - App start
+2023-02-18 16:58:05,216 - werkzeug - WARNING -  * Debugger is active!
+2023-02-18 16:58:05,222 - werkzeug - INFO -  * Debugger PIN: 115-487-645
+2023-02-18 16:58:21,462 - werkzeug - INFO -  * Detected change in '/Users/zakhar/code/PET-bagles/application/views.py', reloading
+2023-02-18 16:58:21,525 - werkzeug - INFO -  * Restarting with stat
+2023-02-18 16:58:21,908 - application.game - INFO - App start
+2023-02-18 16:58:21,923 - werkzeug - WARNING -  * Debugger is active!
+2023-02-18 16:58:21,929 - werkzeug - INFO -  * Debugger PIN: 115-487-645
+2023-02-18 16:58:43,230 - werkzeug - INFO -  * Detected change in '/Users/zakhar/code/PET-bagles/application/views.py', reloading
+2023-02-18 16:58:43,293 - werkzeug - INFO -  * Restarting with stat
+2023-02-18 16:58:43,724 - application.game - INFO - App start
+2023-02-18 16:58:43,739 - werkzeug - WARNING -  * Debugger is active!
+2023-02-18 16:58:43,745 - werkzeug - INFO -  * Debugger PIN: 115-487-645
+2023-02-18 16:58:48,128 - werkzeug - INFO - 127.0.0.1 - - [18/Feb/2023 16:58:48] "GET /new_game HTTP/1.1" 200 -
+2023-02-18 16:58:57,349 - application.game - INFO - App start
+2023-02-18 16:58:57,365 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-18 16:58:57,365 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-18 16:58:57,366 - werkzeug - INFO -  * Restarting with stat
+2023-02-18 16:58:57,685 - application.game - INFO - App start
+2023-02-18 16:58:57,695 - werkzeug - WARNING -  * Debugger is active!
+2023-02-18 16:58:57,701 - werkzeug - INFO -  * Debugger PIN: 115-487-645
+2023-02-18 17:00:11,429 - application.game - INFO - App start
+2023-02-18 17:00:11,458 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-18 17:00:11,458 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-18 17:00:11,460 - werkzeug - INFO -  * Restarting with stat
+2023-02-18 17:00:12,252 - application.game - INFO - App start
+2023-02-18 17:00:12,275 - werkzeug - WARNING -  * Debugger is active!
+2023-02-18 17:00:12,283 - werkzeug - INFO -  * Debugger PIN: 115-487-645
+2023-02-18 17:01:01,432 - application.game - INFO - App start
+2023-02-18 17:01:01,450 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-18 17:01:01,450 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-18 17:01:01,450 - werkzeug - INFO -  * Restarting with stat
+2023-02-18 17:01:01,771 - application.game - INFO - App start
+2023-02-18 17:01:01,782 - werkzeug - WARNING -  * Debugger is active!
+2023-02-18 17:01:01,788 - werkzeug - INFO -  * Debugger PIN: 115-487-645
+2023-02-18 17:01:20,973 - werkzeug - INFO - 127.0.0.1 - - [18/Feb/2023 17:01:20] "GET /new_game HTTP/1.1" 200 -
+2023-02-18 17:01:26,870 - werkzeug - INFO - 127.0.0.1 - - [18/Feb/2023 17:01:26] "GET /game HTTP/1.1" 200 -
+2023-02-18 17:01:30,803 - werkzeug - INFO - 127.0.0.1 - - [18/Feb/2023 17:01:30] "[32mGET /index HTTP/1.1[0m" 302 -
+2023-02-18 17:01:30,807 - werkzeug - INFO - 127.0.0.1 - - [18/Feb/2023 17:01:30] "GET /new_game HTTP/1.1" 200 -
+2023-02-19 11:59:33,719 - application.game - INFO - App start
+2023-02-19 11:59:33,742 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 11:59:33,743 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 11:59:33,743 - werkzeug - INFO -  * Restarting with stat
+2023-02-19 11:59:34,062 - application.game - INFO - App start
+2023-02-19 11:59:34,075 - werkzeug - WARNING -  * Debugger is active!
+2023-02-19 11:59:34,087 - werkzeug - INFO -  * Debugger PIN: 115-487-645
+2023-02-19 11:59:43,136 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 11:59:43] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2023-02-19 11:59:43,194 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 11:59:43] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2023-02-19 11:59:43,195 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 11:59:43] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2023-02-19 11:59:43,222 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 11:59:43] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2023-02-19 11:59:43,261 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 11:59:43] "[36mGET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-02-19 12:00:59,223 - werkzeug - INFO -  * Detected change in '/Users/zakhar/code/PET-bagles/application/views.py', reloading
+2023-02-19 12:00:59,305 - werkzeug - INFO -  * Restarting with stat
+2023-02-19 12:00:59,775 - application.game - INFO - App start
+2023-02-19 12:00:59,795 - werkzeug - WARNING -  * Debugger is active!
+2023-02-19 12:00:59,801 - werkzeug - INFO -  * Debugger PIN: 115-487-645
+2023-02-19 12:01:12,952 - werkzeug - INFO -  * Detected change in '/Users/zakhar/code/PET-bagles/application/views.py', reloading
+2023-02-19 12:01:13,022 - werkzeug - INFO -  * Restarting with stat
+2023-02-19 12:01:13,416 - application.game - INFO - App start
+2023-02-19 12:01:13,432 - werkzeug - WARNING -  * Debugger is active!
+2023-02-19 12:01:13,438 - werkzeug - INFO -  * Debugger PIN: 115-487-645
+2023-02-19 12:04:45,356 - werkzeug - INFO -  * Detected change in '/Users/zakhar/code/PET-bagles/application/views.py', reloading
+2023-02-19 12:04:45,429 - werkzeug - INFO -  * Restarting with stat
+2023-02-19 12:04:45,874 - application.game - INFO - App start
+2023-02-19 12:04:45,897 - werkzeug - WARNING -  * Debugger is active!
+2023-02-19 12:04:45,903 - werkzeug - INFO -  * Debugger PIN: 115-487-645
+2023-02-19 12:04:55,526 - application.game - INFO - App start
+2023-02-19 12:04:55,543 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 12:04:55,543 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 12:04:55,544 - werkzeug - INFO -  * Restarting with stat
+2023-02-19 12:04:55,864 - application.game - INFO - App start
+2023-02-19 12:04:55,876 - werkzeug - WARNING -  * Debugger is active!
+2023-02-19 12:04:55,880 - werkzeug - INFO -  * Debugger PIN: 115-487-645
+2023-02-19 12:05:02,874 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 12:05:02] "[32mGET / HTTP/1.1[0m" 302 -
+2023-02-19 12:05:02,901 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 12:05:02] "GET /new_game HTTP/1.1" 200 -
+2023-02-19 12:05:03,141 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 12:05:03] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+2023-02-19 12:09:48,848 - werkzeug - INFO -  * Detected change in '/Users/zakhar/code/PET-bagles/application/views.py', reloading
+2023-02-19 12:09:48,911 - werkzeug - INFO -  * Restarting with stat
+2023-02-19 12:09:49,361 - application.game - INFO - App start
+2023-02-19 12:09:49,381 - werkzeug - WARNING -  * Debugger is active!
+2023-02-19 12:09:49,387 - werkzeug - INFO -  * Debugger PIN: 115-487-645
+2023-02-19 12:10:08,613 - werkzeug - INFO -  * Detected change in '/Users/zakhar/code/PET-bagles/application/views.py', reloading
+2023-02-19 12:10:08,685 - werkzeug - INFO -  * Restarting with stat
+2023-02-19 12:10:09,110 - application.game - INFO - App start
+2023-02-19 12:10:09,126 - werkzeug - WARNING -  * Debugger is active!
+2023-02-19 12:10:09,132 - werkzeug - INFO -  * Debugger PIN: 115-487-645
+2023-02-19 12:10:51,713 - application.game - INFO - App start
+2023-02-19 12:10:51,735 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 12:10:51,735 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 12:10:51,735 - werkzeug - INFO -  * Restarting with stat
+2023-02-19 12:10:52,089 - application.game - INFO - App start
+2023-02-19 12:10:52,100 - werkzeug - WARNING -  * Debugger is active!
+2023-02-19 12:10:52,107 - werkzeug - INFO -  * Debugger PIN: 115-487-645
+2023-02-19 12:10:57,740 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 12:10:57] "[35m[1mGET /new_game HTTP/1.1[0m" 500 -
+2023-02-19 12:10:57,768 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 12:10:57] "GET /new_game?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2023-02-19 12:10:57,771 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 12:10:57] "GET /new_game?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2023-02-19 12:10:57,827 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 12:10:57] "GET /new_game?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+2023-02-19 12:10:57,853 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 12:10:57] "[36mGET /new_game?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-02-19 12:12:03,004 - werkzeug - INFO -  * Detected change in '/Users/zakhar/code/PET-bagles/application/views.py', reloading
+2023-02-19 12:12:03,075 - werkzeug - INFO -  * Restarting with stat
+2023-02-19 12:12:03,526 - application.game - INFO - App start
+2023-02-19 12:12:03,546 - werkzeug - WARNING -  * Debugger is active!
+2023-02-19 12:12:03,553 - werkzeug - INFO -  * Debugger PIN: 115-487-645
+2023-02-19 12:12:09,453 - application.game - INFO - App start
+2023-02-19 12:12:09,466 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 12:12:09,466 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 12:12:09,467 - werkzeug - INFO -  * Restarting with stat
+2023-02-19 12:12:09,789 - application.game - INFO - App start
+2023-02-19 12:12:09,800 - werkzeug - WARNING -  * Debugger is active!
+2023-02-19 12:12:09,809 - werkzeug - INFO -  * Debugger PIN: 115-487-645
+2023-02-19 12:12:45,372 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 12:12:45] "GET /new_game HTTP/1.1" 200 -
+2023-02-19 12:12:48,357 - Modules.Cfgmanager - INFO - Config_file: settings/main.yml succefully load
+2023-02-19 12:12:48,423 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 12:12:48] "[35m[1mPOST /new_game HTTP/1.1[0m" 500 -
+2023-02-19 12:12:48,450 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 12:12:48] "[36mGET /new_game?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-02-19 12:12:48,454 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 12:12:48] "[36mGET /new_game?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-02-19 12:12:48,488 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 12:12:48] "[36mGET /new_game?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-02-19 12:12:48,507 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 12:12:48] "[36mGET /new_game?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-02-19 12:14:08,396 - werkzeug - INFO -  * Detected change in '/Users/zakhar/code/PET-bagles/application/game.py', reloading
+2023-02-19 12:14:08,458 - werkzeug - INFO -  * Restarting with stat
+2023-02-19 12:14:08,883 - application.game - INFO - App start
+2023-02-19 12:14:08,903 - werkzeug - WARNING -  * Debugger is active!
+2023-02-19 12:14:08,909 - werkzeug - INFO -  * Debugger PIN: 115-487-645
+2023-02-19 12:14:13,973 - werkzeug - INFO -  * Detected change in '/Users/zakhar/code/PET-bagles/application/game.py', reloading
+2023-02-19 12:14:14,039 - werkzeug - INFO -  * Restarting with stat
+2023-02-19 12:14:14,365 - application.game - INFO - App start
+2023-02-19 12:14:14,376 - werkzeug - WARNING -  * Debugger is active!
+2023-02-19 12:14:14,381 - werkzeug - INFO -  * Debugger PIN: 115-487-645
+2023-02-19 12:14:16,407 - werkzeug - INFO -  * Detected change in '/Users/zakhar/code/PET-bagles/application/game.py', reloading
+2023-02-19 12:14:16,460 - werkzeug - INFO -  * Restarting with stat
+2023-02-19 12:14:16,793 - application.game - INFO - App start
+2023-02-19 12:14:16,805 - werkzeug - WARNING -  * Debugger is active!
+2023-02-19 12:14:16,812 - werkzeug - INFO -  * Debugger PIN: 115-487-645
+2023-02-19 12:14:20,043 - application.game - INFO - App start
+2023-02-19 12:14:20,056 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 12:14:20,056 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 12:14:20,056 - werkzeug - INFO -  * Restarting with stat
+2023-02-19 12:14:20,379 - application.game - INFO - App start
+2023-02-19 12:14:20,391 - werkzeug - WARNING -  * Debugger is active!
+2023-02-19 12:14:20,395 - werkzeug - INFO -  * Debugger PIN: 115-487-645
+2023-02-19 12:14:23,888 - Modules.Cfgmanager - INFO - Config_file: settings/main.yml succefully load
+2023-02-19 12:14:23,953 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 12:14:23] "[35m[1mPOST /new_game HTTP/1.1[0m" 500 -
+2023-02-19 12:14:23,973 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 12:14:23] "[36mGET /new_game?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-02-19 12:14:23,976 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 12:14:23] "[36mGET /new_game?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-02-19 12:14:24,000 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 12:14:24] "[36mGET /new_game?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-02-19 12:14:24,041 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 12:14:24] "[36mGET /new_game?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-02-19 12:14:26,788 - Modules.Cfgmanager - INFO - Config_file: settings/main.yml succefully load
+2023-02-19 12:14:26,818 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 12:14:26] "[35m[1mPOST /new_game HTTP/1.1[0m" 500 -
+2023-02-19 12:14:26,830 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 12:14:26] "[36mGET /new_game?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-02-19 12:14:26,832 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 12:14:26] "[36mGET /new_game?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-02-19 12:14:26,860 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 12:14:26] "[36mGET /new_game?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-02-19 12:14:26,890 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 12:14:26] "[36mGET /new_game?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-02-19 12:14:29,980 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 12:14:29] "[32mGET / HTTP/1.1[0m" 302 -
+2023-02-19 12:14:29,992 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 12:14:29] "GET /new_game HTTP/1.1" 200 -
+2023-02-19 12:14:31,475 - Modules.Cfgmanager - INFO - Config_file: settings/main.yml succefully load
+2023-02-19 12:14:31,505 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 12:14:31] "[35m[1mPOST /new_game HTTP/1.1[0m" 500 -
+2023-02-19 12:14:31,520 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 12:14:31] "[36mGET /new_game?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1[0m" 304 -
+2023-02-19 12:14:31,521 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 12:14:31] "[36mGET /new_game?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1[0m" 304 -
+2023-02-19 12:14:31,553 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 12:14:31] "[36mGET /new_game?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-02-19 12:14:31,582 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 12:14:31] "[36mGET /new_game?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-02-19 12:58:26,493 - application.game - INFO - App start
+2023-02-19 12:58:26,517 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 12:58:26,517 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 12:58:26,518 - werkzeug - INFO -  * Restarting with stat
+2023-02-19 12:58:27,051 - application.game - INFO - App start
+2023-02-19 12:58:27,068 - werkzeug - WARNING -  * Debugger is active!
+2023-02-19 12:58:27,077 - werkzeug - INFO -  * Debugger PIN: 115-487-645
+2023-02-19 12:58:42,521 - application.game - INFO - App start
+2023-02-19 12:58:42,541 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 12:58:42,541 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 12:58:42,542 - werkzeug - INFO -  * Restarting with stat
+2023-02-19 12:58:43,081 - application.game - INFO - App start
+2023-02-19 12:58:43,099 - werkzeug - WARNING -  * Debugger is active!
+2023-02-19 12:58:43,107 - werkzeug - INFO -  * Debugger PIN: 115-487-645
+2023-02-19 12:58:55,351 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 12:58:55] "[32mGET / HTTP/1.1[0m" 302 -
+2023-02-19 12:58:55,376 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 12:58:55] "GET /new_game HTTP/1.1" 200 -
+2023-02-19 12:59:38,405 - Modules.Cfgmanager - INFO - Config_file: settings/main.yml succefully load
+2023-02-19 12:59:38,452 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 12:59:38] "[32mPOST /new_game HTTP/1.1[0m" 302 -
+2023-02-19 12:59:38,458 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 12:59:38] "[32mGET /index HTTP/1.1[0m" 302 -
+2023-02-19 12:59:38,464 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 12:59:38] "GET /new_game HTTP/1.1" 200 -
+2023-02-19 13:04:30,074 - application.game - INFO - App start
+2023-02-19 13:04:30,089 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 13:04:30,089 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 13:06:31,192 - application.game - INFO - App start
+2023-02-19 13:06:31,208 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 13:06:31,208 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 13:06:56,781 - application.game - INFO - App start
+2023-02-19 13:06:56,795 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 13:06:56,795 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 13:07:05,865 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 13:07:05] "[32mGET / HTTP/1.1[0m" 302 -
+2023-02-19 13:07:33,962 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 13:07:33] "GET /new_game HTTP/1.1" 200 -
+2023-02-19 13:08:06,823 - Modules.Cfgmanager - INFO - Config_file: settings/main.yml succefully load
+2023-02-19 13:08:30,835 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 13:08:30] "[32mPOST /new_game HTTP/1.1[0m" 302 -
+2023-02-19 13:08:30,845 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 13:08:30] "[32mGET /index HTTP/1.1[0m" 302 -
+2023-02-19 13:08:35,586 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 13:08:35] "GET /new_game HTTP/1.1" 200 -
+2023-02-19 13:08:44,225 - Modules.Cfgmanager - INFO - Config_file: settings/main.yml succefully load
+2023-02-19 13:10:12,236 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 13:10:12] "[32mPOST /new_game HTTP/1.1[0m" 302 -
+2023-02-19 13:10:12,246 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 13:10:12] "[32mGET /index HTTP/1.1[0m" 302 -
+2023-02-19 13:11:07,359 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 13:11:07] "GET /new_game HTTP/1.1" 200 -
+2023-02-19 13:11:39,596 - application.game - INFO - App start
+2023-02-19 13:11:39,611 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 13:11:39,611 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 13:11:45,450 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 13:11:45] "[32mGET / HTTP/1.1[0m" 302 -
+2023-02-19 13:11:51,807 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 13:11:51] "GET /new_game HTTP/1.1" 200 -
+2023-02-19 13:11:58,137 - Modules.Cfgmanager - INFO - Config_file: settings/main.yml succefully load
+2023-02-19 13:12:02,233 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 13:12:02] "[32mPOST /new_game HTTP/1.1[0m" 302 -
+2023-02-19 13:12:02,242 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 13:12:02] "[35m[1mGET /index HTTP/1.1[0m" 500 -
+2023-02-19 13:12:02,253 - werkzeug - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/application/views.py", line 12, in index
+    return render_template(
+           ^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/zakhar/code/PET-bagles/application/templates/new_game.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/zakhar/code/PET-bagles/application/templates/base.html", line 25, in top-level template code
+    {% block new_game %} {% endblock %}
+  File "/Users/zakhar/code/PET-bagles/application/templates/new_game.html", line 8, in block 'new_game'
+    {{ form.hidden_tag() }}
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/jinja2/environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2023-02-19 13:13:52,210 - application.game - INFO - App start
+2023-02-19 13:13:52,226 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 13:13:52,226 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 13:14:19,797 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 13:14:19] "[32mGET /index HTTP/1.1[0m" 302 -
+2023-02-19 13:14:19,821 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 13:14:19] "GET /current_game HTTP/1.1" 200 -
+2023-02-19 13:14:36,295 - application.game - INFO - App start
+2023-02-19 13:14:36,310 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 13:14:36,310 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 13:18:20,250 - application.game - INFO - App start
+2023-02-19 13:18:20,265 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 13:18:20,265 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 13:18:29,842 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 13:18:29] "[32mGET / HTTP/1.1[0m" 302 -
+2023-02-19 13:18:29,864 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 13:18:29] "GET /new_game HTTP/1.1" 200 -
+2023-02-19 13:18:51,811 - application.game - INFO - App start
+2023-02-19 13:18:51,825 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 13:18:51,825 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 13:19:00,730 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 13:19:00] "[32mGET / HTTP/1.1[0m" 302 -
+2023-02-19 13:19:16,192 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 13:19:16] "GET /new_game HTTP/1.1" 200 -
+2023-02-19 13:19:24,986 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 13:19:24] "GET /new_game HTTP/1.1" 200 -
+2023-02-19 13:25:16,727 - application.game - INFO - App start
+2023-02-19 13:25:16,742 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 13:25:16,743 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 13:25:25,748 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 13:25:25] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2023-02-19 13:25:25,761 - werkzeug - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/application/views.py", line 10, in index
+    if not g.session_id:
+           ^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/ctx.py", line 52, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: session_id
+2023-02-19 13:32:09,219 - application.game - INFO - App start
+2023-02-19 13:32:09,234 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 13:32:09,234 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 13:34:22,374 - application.game - INFO - App start
+2023-02-19 13:34:22,389 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 13:34:22,389 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 13:34:29,306 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 13:34:29] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2023-02-19 13:34:29,324 - werkzeug - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/application/views.py", line 10, in index
+    if not getattr(g, 'session_id'):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/ctx.py", line 52, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: session_id
+2023-02-19 13:34:50,300 - application.game - INFO - App start
+2023-02-19 13:34:50,313 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 13:34:50,313 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 13:34:56,886 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 13:34:56] "[32mGET / HTTP/1.1[0m" 302 -
+2023-02-19 13:34:58,347 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 13:34:58] "[35m[1mGET /new_game HTTP/1.1[0m" 500 -
+2023-02-19 13:34:58,358 - werkzeug - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/application/views.py", line 19, in new_game
+    session_id = g.session_id
+                 ^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/ctx.py", line 52, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: session_id
+2023-02-19 13:35:54,972 - application.game - INFO - App start
+2023-02-19 13:35:54,987 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 13:35:54,987 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 13:36:01,421 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 13:36:01] "[32mGET / HTTP/1.1[0m" 302 -
+2023-02-19 13:36:06,681 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 13:36:06] "GET /new_game HTTP/1.1" 200 -
+2023-02-19 13:36:22,390 - Modules.Cfgmanager - INFO - Config_file: settings/main.yml succefully load
+2023-02-19 13:36:43,101 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 13:36:43] "[32mPOST /new_game HTTP/1.1[0m" 302 -
+2023-02-19 13:36:48,694 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 13:36:48] "[32mGET /index HTTP/1.1[0m" 302 -
+2023-02-19 13:36:51,468 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 13:36:51] "GET /new_game HTTP/1.1" 200 -
+2023-02-19 13:37:08,537 - Modules.Cfgmanager - INFO - Config_file: settings/main.yml succefully load
+2023-02-19 13:37:11,056 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 13:37:11] "[32mPOST /new_game HTTP/1.1[0m" 302 -
+2023-02-19 13:55:22,158 - application.game - INFO - App start
+2023-02-19 13:55:22,174 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 13:55:22,174 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 13:55:31,997 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 13:55:31] "[35m[1mGET / HTTP/1.1[0m" 500 -
+2023-02-19 13:55:32,011 - werkzeug - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: index() missing 1 required positional argument: 'session_id'
+2023-02-19 13:55:52,806 - application.game - INFO - App start
+2023-02-19 13:55:52,820 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 13:55:52,820 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 13:56:14,755 - application.game - INFO - App start
+2023-02-19 13:56:14,772 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 13:56:14,773 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 13:56:27,573 - application.game - INFO - App start
+2023-02-19 13:56:27,588 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 13:56:27,588 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 13:56:43,138 - application.game - INFO - App start
+2023-02-19 13:56:43,152 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 13:56:43,152 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 13:58:15,351 - application.game - INFO - App start
+2023-02-19 13:58:15,368 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 13:58:15,368 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 13:59:12,711 - application.game - INFO - App start
+2023-02-19 13:59:12,727 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 13:59:12,727 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 13:59:31,701 - application.game - INFO - App start
+2023-02-19 13:59:31,716 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 13:59:31,716 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 14:01:47,439 - application.game - INFO - App start
+2023-02-19 14:02:10,971 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 14:02:10,973 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 14:02:26,154 - application.game - INFO - App start
+2023-02-19 14:02:54,568 - application.game - INFO - App start
+2023-02-19 14:03:05,371 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 14:03:05,371 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 14:03:47,565 - application.game - INFO - App start
+2023-02-19 14:04:22,084 - application.game - INFO - App start
+2023-02-19 14:04:28,791 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 14:04:28,791 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 14:05:12,337 - application.game - INFO - App start
+2023-02-19 14:05:12,353 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 14:05:12,353 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 14:05:54,922 - application.game - INFO - App start
+2023-02-19 14:05:54,936 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 14:05:54,937 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 14:06:03,869 - application.game - INFO - App start
+2023-02-19 14:06:48,550 - application.game - INFO - App start
+2023-02-19 14:06:56,540 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 14:06:56,540 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 14:07:00,268 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 14:07:00] "GET /new_game HTTP/1.1" 200 -
+2023-02-19 14:07:59,005 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 14:07:59] "[32mGET / HTTP/1.1[0m" 302 -
+2023-02-19 14:07:59,025 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 14:07:59] "GET /current_game HTTP/1.1" 200 -

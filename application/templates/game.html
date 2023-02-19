@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% block game %}
+
+<body class="text-center">
+    <div class="container">
+        <form action="" method="post" name="try" style="color:white">
+            {{ form.hidden_tag() }}
+            <h1 class="h3 mb-3 font-weight-normal">
+                Try the Number
+            </h1>
+            <br>
+            <p>
+                {{ form.try_number.label() }}
+                {{ form.try_number(class="form-control") }} <br>
+            </p>
+            <p>
+                {{ form.submit_button(class="btn btn-lg btn-block btn-primary", value="Try!") }} <br>
+            </p>
+
+
+        </form>
+    </div>
+
+    {% for result in results %} <p> {{ result }}</p>
+
+    {% endfor %}
+
+
+
+</body>
+
+{% endblock %}

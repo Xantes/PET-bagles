@@ -1,6 +1,6 @@
 from yaml import safe_load
 import logging
-import os
+from pathlib import Path
 
 
 class CfgManager():
@@ -9,7 +9,7 @@ class CfgManager():
         self.default_conf = default_conf
         self.logger = logging.getLogger(__name__)
         if cfg_file:
-            if os.path.exists(cfg_file):
+            if Path(cfg_file).exists():
                 self.load_conf(cfg_file)
             else:
                 self.logger.error(

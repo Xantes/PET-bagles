@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block new_game %}
+
+<h1>Press New game to start</h1>
+
+<form action="" method="post">
+    {{ form.hidden_tag() }}
+    <p>
+        {{ form.start.label }}
+        {{ form.start }}
+    </p>
+
+</form>
+
+
+{% endblock %}

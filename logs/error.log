@@ -1,1 +1,213 @@
 2023-01-16 11:49:03,756 - Modules.Cfgmanager - ERROR - Config doesn't set. Used default
+2023-01-16 12:36:25,115 - Modules.Cfgmanager - ERROR - Config doesn't set. Used default
+2023-01-16 12:48:25,768 - Modules.Cfgmanager - ERROR - Config doesn't set. Used default
+2023-01-16 12:48:35,993 - Modules.Cfgmanager - ERROR - Config doesn't set. Used default
+2023-01-16 13:21:34,326 - __main__ - ERROR - connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2023-01-16 13:24:40,673 - __main__ - ERROR - connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2023-01-16 13:28:12,371 - __main__ - ERROR - connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2023-01-16 13:31:20,045 - __main__ - ERROR - connection to server at "127.0.0.1", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2023-01-16 13:32:50,361 - __main__ - ERROR - connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2023-01-16 13:33:10,198 - __main__ - ERROR - connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2023-01-16 13:38:01,102 - __main__ - ERROR - connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+2023-01-17 10:03:37,496 - __main__ - ERROR - database "test_db" already exists
+
+2023-01-17 11:10:55,653 - __main__ - ERROR - could not translate host name "locahost" to address: nodename nor servname provided, or not known
+
+2023-01-17 11:14:46,728 - __main__ - ERROR - argument 1 must be a string or unicode object: got tuple instead
+2023-01-17 11:14:51,661 - __main__ - ERROR - argument 1 must be a string or unicode object: got tuple instead
+2023-01-17 11:16:11,844 - __main__ - ERROR - argument 1 must be a string or unicode object: got tuple instead
+2023-01-17 11:22:20,018 - __main__ - ERROR - argument 1 must be a string or unicode object: got tuple instead
+2023-01-17 11:26:19,349 - __main__ - ERROR - database "bagles_db" already exists
+
+2023-01-17 11:32:07,617 - __main__ - ERROR - syntax error at or near "\"
+LINE 1: \c bagles_db
+        ^
+
+2023-01-17 11:42:55,023 - Modules.Cfgmanager - ERROR - Config doesn't set. Used default
+2023-02-19 13:12:02,253 - werkzeug - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/application/views.py", line 12, in index
+    return render_template(
+           ^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/templating.py", line 147, in render_template
+    return _render(app, template, context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/templating.py", line 130, in _render
+    rv = template.render(context)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/jinja2/environment.py", line 1301, in render
+    self.environment.handle_exception()
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/jinja2/environment.py", line 936, in handle_exception
+    raise rewrite_traceback_stack(source=source)
+  File "/Users/zakhar/code/PET-bagles/application/templates/new_game.html", line 1, in top-level template code
+    {% extends "base.html" %}
+  File "/Users/zakhar/code/PET-bagles/application/templates/base.html", line 25, in top-level template code
+    {% block new_game %} {% endblock %}
+  File "/Users/zakhar/code/PET-bagles/application/templates/new_game.html", line 8, in block 'new_game'
+    {{ form.hidden_tag() }}
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/jinja2/environment.py", line 485, in getattr
+    return getattr(obj, attribute)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+jinja2.exceptions.UndefinedError: 'form' is undefined
+2023-02-19 13:25:25,761 - werkzeug - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/application/views.py", line 10, in index
+    if not g.session_id:
+           ^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/ctx.py", line 52, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: session_id
+2023-02-19 13:34:29,324 - werkzeug - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/application/views.py", line 10, in index
+    if not getattr(g, 'session_id'):
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/ctx.py", line 52, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: session_id
+2023-02-19 13:34:58,358 - werkzeug - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/application/views.py", line 19, in new_game
+    session_id = g.session_id
+                 ^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/ctx.py", line 52, in __getattr__
+    raise AttributeError(name) from None
+AttributeError: session_id
+2023-02-19 13:55:32,011 - werkzeug - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: index() missing 1 required positional argument: 'session_id'
