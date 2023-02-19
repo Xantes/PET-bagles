@@ -211,3 +211,514 @@ Traceback (most recent call last):
     return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 TypeError: index() missing 1 required positional argument: 'session_id'
+2023-02-19 15:28:48,165 - werkzeug - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/application/views.py", line 33, in current_game
+    session_id = session['session_id']
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/sessions.py", line 80, in __getitem__
+    return super().__getitem__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'session_id'
+2023-02-19 15:28:48,931 - werkzeug - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/application/views.py", line 33, in current_game
+    session_id = session['session_id']
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/sessions.py", line 80, in __getitem__
+    return super().__getitem__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'session_id'
+2023-02-19 15:28:54,241 - werkzeug - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/application/views.py", line 33, in current_game
+    session_id = session['session_id']
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/sessions.py", line 80, in __getitem__
+    return super().__getitem__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'session_id'
+2023-02-19 16:36:23,196 - werkzeug - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/application/views.py", line 13, in index
+    return redirect(url_for('current_game'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/helpers.py", line 256, in url_for
+    return current_app.url_for(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2031, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2020, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/routing/map.py", line 917, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'current_game'. Did you forget to specify values ['session_id']?
+2023-02-19 16:37:18,248 - werkzeug - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/application/views.py", line 13, in index
+    return redirect(url_for('current_game'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/helpers.py", line 256, in url_for
+    return current_app.url_for(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2031, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2020, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/routing/map.py", line 917, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'current_game'. Did you forget to specify values ['session_id']?
+2023-02-19 16:37:19,766 - werkzeug - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/application/views.py", line 13, in index
+    return redirect(url_for('current_game'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/helpers.py", line 256, in url_for
+    return current_app.url_for(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2031, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2020, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/routing/map.py", line 917, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'current_game'. Did you forget to specify values ['session_id']?
+2023-02-19 16:38:28,018 - werkzeug - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/application/views.py", line 13, in index
+    return redirect(url_for('current_game'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/helpers.py", line 256, in url_for
+    return current_app.url_for(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2031, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2020, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/routing/map.py", line 917, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'current_game'. Did you forget to specify values ['session_id']?
+2023-02-19 16:38:43,092 - werkzeug - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/application/views.py", line 37, in current_game
+    results = game.another_try(session_id, try_number)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/application/game.py", line 48, in another_try
+    result = Checker.check(sql_response.number, try_number)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/Modules/Checker.py", line 7, in check
+    if word[i] == letter:
+       ^^^^^^^^^^^^^^^^^^
+TypeError: 'int' object is not subscriptable
+2023-02-19 16:38:43,112 - werkzeug - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/application/views.py", line 13, in index
+    return redirect(url_for('current_game'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/helpers.py", line 256, in url_for
+    return current_app.url_for(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2031, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2020, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/routing/map.py", line 917, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'current_game'. Did you forget to specify values ['session_id']?
+2023-02-19 16:41:21,083 - werkzeug - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/application/views.py", line 13, in index
+    return redirect(url_for('current_game'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/helpers.py", line 256, in url_for
+    return current_app.url_for(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2031, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2020, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/routing/map.py", line 917, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'current_game'. Did you forget to specify values ['session_id']?
+2023-02-19 19:20:06,480 - werkzeug - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/application/views.py", line 39, in current_game
+    results = game.another_try(session_id, try_number)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/application/game.py", line 55, in another_try
+    checker = Checker.check(
+              ^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/Modules/Checker.py", line 9, in check
+    if word[i] == letter:
+       ^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+2023-02-19 19:20:37,585 - werkzeug - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/application/views.py", line 39, in current_game
+    results = game.another_try(session_id, try_number)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/application/game.py", line 55, in another_try
+    checker = Checker.check(
+              ^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/Modules/Checker.py", line 9, in check
+    if word[i] == letter:
+       ^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+2023-02-19 19:21:01,058 - werkzeug - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/application/views.py", line 39, in current_game
+    results = game.another_try(session_id, try_number)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/application/game.py", line 55, in another_try
+    checker = Checker.check(
+              ^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/Modules/Checker.py", line 9, in check
+    if word[i] == letter:
+       ^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+2023-02-19 19:21:17,155 - werkzeug - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/application/views.py", line 39, in current_game
+    results = game.another_try(session_id, try_number)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/application/game.py", line 55, in another_try
+    checker = Checker.check(
+              ^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/Modules/Checker.py", line 9, in check
+    if word[i] == letter:
+       ^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range

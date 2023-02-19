@@ -590,3 +590,981 @@ TypeError: index() missing 1 required positional argument: 'session_id'
 2023-02-19 14:07:00,268 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 14:07:00] "GET /new_game HTTP/1.1" 200 -
 2023-02-19 14:07:59,005 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 14:07:59] "[32mGET / HTTP/1.1[0m" 302 -
 2023-02-19 14:07:59,025 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 14:07:59] "GET /current_game HTTP/1.1" 200 -
+2023-02-19 15:27:18,677 - application.game - INFO - App start
+2023-02-19 15:28:22,913 - application.game - INFO - App start
+2023-02-19 15:28:38,753 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 15:28:38,754 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 15:28:48,149 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 15:28:48] "[32mGET / HTTP/1.1[0m" 302 -
+2023-02-19 15:28:48,154 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 15:28:48] "[35m[1mGET /current_game HTTP/1.1[0m" 500 -
+2023-02-19 15:28:48,165 - werkzeug - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/application/views.py", line 33, in current_game
+    session_id = session['session_id']
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/sessions.py", line 80, in __getitem__
+    return super().__getitem__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'session_id'
+2023-02-19 15:28:48,924 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 15:28:48] "[32mGET / HTTP/1.1[0m" 302 -
+2023-02-19 15:28:48,929 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 15:28:48] "[35m[1mGET /current_game HTTP/1.1[0m" 500 -
+2023-02-19 15:28:48,931 - werkzeug - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/application/views.py", line 33, in current_game
+    session_id = session['session_id']
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/sessions.py", line 80, in __getitem__
+    return super().__getitem__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'session_id'
+2023-02-19 15:28:54,233 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 15:28:54] "[32mGET / HTTP/1.1[0m" 302 -
+2023-02-19 15:28:54,239 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 15:28:54] "[35m[1mGET /current_game HTTP/1.1[0m" 500 -
+2023-02-19 15:28:54,241 - werkzeug - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/application/views.py", line 33, in current_game
+    session_id = session['session_id']
+                 ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/sessions.py", line 80, in __getitem__
+    return super().__getitem__(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+KeyError: 'session_id'
+2023-02-19 15:29:58,135 - application.game - INFO - App start
+2023-02-19 16:35:32,947 - application.game - INFO - App start
+2023-02-19 16:36:01,592 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 16:36:01,594 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 16:36:12,382 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 16:36:12] "[32mGET / HTTP/1.1[0m" 302 -
+2023-02-19 16:36:23,175 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 16:36:23] "[35m[1mGET /new_gane HTTP/1.1[0m" 500 -
+2023-02-19 16:36:23,196 - werkzeug - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/application/views.py", line 13, in index
+    return redirect(url_for('current_game'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/helpers.py", line 256, in url_for
+    return current_app.url_for(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2031, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2020, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/routing/map.py", line 917, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'current_game'. Did you forget to specify values ['session_id']?
+2023-02-19 16:36:25,390 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 16:36:25] "GET /new_game HTTP/1.1" 200 -
+2023-02-19 16:37:13,959 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 16:37:13] "[32mGET / HTTP/1.1[0m" 302 -
+2023-02-19 16:37:13,968 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 16:37:13] "GET /new_game HTTP/1.1" 200 -
+2023-02-19 16:37:18,245 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 16:37:18] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2023-02-19 16:37:18,248 - werkzeug - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/application/views.py", line 13, in index
+    return redirect(url_for('current_game'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/helpers.py", line 256, in url_for
+    return current_app.url_for(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2031, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2020, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/routing/map.py", line 917, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'current_game'. Did you forget to specify values ['session_id']?
+2023-02-19 16:37:19,666 - Modules.Cfgmanager - INFO - Config_file: settings/main.yml succefully load
+2023-02-19 16:37:19,703 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 16:37:19] "[32mPOST /new_game HTTP/1.1[0m" 302 -
+2023-02-19 16:37:19,721 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 16:37:19] "GET /current_game/2b252c2dcae664ce03a28d68f37a79de HTTP/1.1" 200 -
+2023-02-19 16:37:19,764 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 16:37:19] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2023-02-19 16:37:19,766 - werkzeug - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/application/views.py", line 13, in index
+    return redirect(url_for('current_game'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/helpers.py", line 256, in url_for
+    return current_app.url_for(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2031, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2020, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/routing/map.py", line 917, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'current_game'. Did you forget to specify values ['session_id']?
+2023-02-19 16:38:11,673 - application.game - INFO - App start
+2023-02-19 16:38:22,894 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 16:38:22,894 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 16:38:27,840 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 16:38:27] "GET /current_game/2b252c2dcae664ce03a28d68f37a79de HTTP/1.1" 200 -
+2023-02-19 16:38:28,002 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 16:38:28] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2023-02-19 16:38:28,018 - werkzeug - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/application/views.py", line 13, in index
+    return redirect(url_for('current_game'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/helpers.py", line 256, in url_for
+    return current_app.url_for(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2031, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2020, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/routing/map.py", line 917, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'current_game'. Did you forget to specify values ['session_id']?
+2023-02-19 16:38:43,089 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 16:38:43] "[35m[1mPOST /current_game/2b252c2dcae664ce03a28d68f37a79de HTTP/1.1[0m" 500 -
+2023-02-19 16:38:43,092 - werkzeug - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/application/views.py", line 37, in current_game
+    results = game.another_try(session_id, try_number)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/application/game.py", line 48, in another_try
+    result = Checker.check(sql_response.number, try_number)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/Modules/Checker.py", line 7, in check
+    if word[i] == letter:
+       ^^^^^^^^^^^^^^^^^^
+TypeError: 'int' object is not subscriptable
+2023-02-19 16:38:43,110 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 16:38:43] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2023-02-19 16:38:43,112 - werkzeug - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/application/views.py", line 13, in index
+    return redirect(url_for('current_game'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/helpers.py", line 256, in url_for
+    return current_app.url_for(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2031, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2020, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/routing/map.py", line 917, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'current_game'. Did you forget to specify values ['session_id']?
+2023-02-19 16:39:00,996 - application.game - INFO - App start
+2023-02-19 16:39:01,018 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 16:39:01,018 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 16:40:39,499 - application.game - INFO - App start
+2023-02-19 16:40:39,521 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 16:40:39,521 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 16:41:20,880 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 16:41:20] "POST /current_game/2b252c2dcae664ce03a28d68f37a79de HTTP/1.1" 200 -
+2023-02-19 16:41:21,068 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 16:41:21] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+2023-02-19 16:41:21,083 - werkzeug - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/application/views.py", line 13, in index
+    return redirect(url_for('current_game'))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/helpers.py", line 256, in url_for
+    return current_app.url_for(
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2031, in url_for
+    return self.handle_url_build_error(error, endpoint, values)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2020, in url_for
+    rv = url_adapter.build(  # type: ignore[union-attr]
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/routing/map.py", line 917, in build
+    raise BuildError(endpoint, values, method, self)
+werkzeug.routing.exceptions.BuildError: Could not build url for endpoint 'current_game'. Did you forget to specify values ['session_id']?
+2023-02-19 17:20:51,850 - application.game - INFO - App start
+2023-02-19 17:21:09,588 - application.game - INFO - App start
+2023-02-19 17:21:09,608 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 17:21:09,608 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 17:22:12,190 - Modules.Cfgmanager - INFO - Config_file: settings/main.yml succefully load
+2023-02-19 17:22:12,218 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 17:22:12] "[32mPOST /new_game HTTP/1.1[0m" 302 -
+2023-02-19 17:22:12,242 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 17:22:12] "GET /current_game/d90316a12791acce05fd8e6b9eb21a85 HTTP/1.1" 200 -
+2023-02-19 17:22:12,445 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 17:22:12] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 17:22:12,459 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 17:22:12] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 17:22:40,484 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 17:22:40] "POST /current_game/d90316a12791acce05fd8e6b9eb21a85 HTTP/1.1" 200 -
+2023-02-19 17:22:40,521 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 17:22:40] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 17:22:40,537 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 17:22:40] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 18:35:15,892 - application.game - INFO - App start
+2023-02-19 18:35:24,267 - application.game - INFO - App start
+2023-02-19 18:35:24,286 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 18:35:24,286 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 18:37:05,000 - Modules.Cfgmanager - INFO - Config_file: settings/main.yml succefully load
+2023-02-19 18:37:05,039 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 18:37:05] "[32mPOST /new_game?message= HTTP/1.1[0m" 302 -
+2023-02-19 18:37:05,066 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 18:37:05] "GET /current_game/6cc19898e50890e448e81730e194cdee HTTP/1.1" 200 -
+2023-02-19 18:37:05,280 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 18:37:05] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 18:37:05,293 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 18:37:05] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 18:37:29,187 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 18:37:29] "POST /current_game/6cc19898e50890e448e81730e194cdee HTTP/1.1" 200 -
+2023-02-19 18:37:29,227 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 18:37:29] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 18:37:29,233 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 18:37:29] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 18:37:32,820 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 18:37:32] "POST /current_game/6cc19898e50890e448e81730e194cdee HTTP/1.1" 200 -
+2023-02-19 18:37:32,850 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 18:37:32] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 18:37:32,864 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 18:37:32] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 18:37:33,683 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 18:37:33] "POST /current_game/6cc19898e50890e448e81730e194cdee HTTP/1.1" 200 -
+2023-02-19 18:37:33,712 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 18:37:33] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 18:37:33,727 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 18:37:33] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 18:37:34,573 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 18:37:34] "POST /current_game/6cc19898e50890e448e81730e194cdee HTTP/1.1" 200 -
+2023-02-19 18:37:34,596 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 18:37:34] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 18:37:34,613 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 18:37:34] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 18:37:35,421 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 18:37:35] "POST /current_game/6cc19898e50890e448e81730e194cdee HTTP/1.1" 200 -
+2023-02-19 18:37:35,446 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 18:37:35] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 18:37:35,461 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 18:37:35] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 18:37:36,204 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 18:37:36] "POST /current_game/6cc19898e50890e448e81730e194cdee HTTP/1.1" 200 -
+2023-02-19 18:37:36,230 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 18:37:36] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 18:37:36,246 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 18:37:36] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 18:37:37,198 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 18:37:37] "POST /current_game/6cc19898e50890e448e81730e194cdee HTTP/1.1" 200 -
+2023-02-19 18:37:37,221 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 18:37:37] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 18:37:37,238 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 18:37:37] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 18:37:38,001 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 18:37:38] "POST /current_game/6cc19898e50890e448e81730e194cdee HTTP/1.1" 200 -
+2023-02-19 18:37:38,024 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 18:37:38] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 18:37:38,041 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 18:37:38] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 18:37:38,784 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 18:37:38] "POST /current_game/6cc19898e50890e448e81730e194cdee HTTP/1.1" 200 -
+2023-02-19 18:37:38,808 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 18:37:38] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 18:37:38,825 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 18:37:38] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 18:37:39,670 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 18:37:39] "POST /current_game/6cc19898e50890e448e81730e194cdee HTTP/1.1" 200 -
+2023-02-19 18:37:39,693 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 18:37:39] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 18:37:39,700 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 18:37:39] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 18:37:41,282 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 18:37:41] "[32mPOST /current_game/6cc19898e50890e448e81730e194cdee HTTP/1.1[0m" 302 -
+2023-02-19 18:47:32,656 - application.game - INFO - App start
+2023-02-19 18:47:32,681 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 18:47:32,681 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 18:47:51,874 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 18:47:51] "[32mGET / HTTP/1.1[0m" 302 -
+2023-02-19 19:02:30,008 - application.game - INFO - App start
+2023-02-19 19:02:30,032 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 19:02:30,032 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 19:02:55,847 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:02:55] "[32mGET / HTTP/1.1[0m" 302 -
+2023-02-19 19:06:38,987 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:06:38] "[32mGET / HTTP/1.1[0m" 302 -
+2023-02-19 19:06:50,471 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:06:50] "GET /new_game HTTP/1.1" 200 -
+2023-02-19 19:06:50,955 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:06:50] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:06:50,976 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:06:50] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:07:01,689 - Modules.Cfgmanager - INFO - Config_file: settings/main.yml succefully load
+2023-02-19 19:07:02,138 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:07:02] "[32mPOST /new_game HTTP/1.1[0m" 302 -
+2023-02-19 19:07:02,145 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:07:02] "GET /current_game/bbbc99b89c8ff50633b3da115d2cf5dd HTTP/1.1" 200 -
+2023-02-19 19:07:02,237 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:07:02] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:07:02,246 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:07:02] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:07:08,399 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:07:08] "POST /current_game/bbbc99b89c8ff50633b3da115d2cf5dd HTTP/1.1" 200 -
+2023-02-19 19:07:08,433 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:07:08] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:07:08,443 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:07:08] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:07:13,511 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:07:13] "POST /current_game/bbbc99b89c8ff50633b3da115d2cf5dd HTTP/1.1" 200 -
+2023-02-19 19:07:13,540 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:07:13] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:07:13,549 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:07:13] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:07:21,179 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:07:21] "POST /current_game/bbbc99b89c8ff50633b3da115d2cf5dd HTTP/1.1" 200 -
+2023-02-19 19:07:21,207 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:07:21] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:07:21,218 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:07:21] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:07:31,468 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:07:31] "POST /current_game/bbbc99b89c8ff50633b3da115d2cf5dd HTTP/1.1" 200 -
+2023-02-19 19:07:31,500 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:07:31] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:07:31,506 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:07:31] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:07:53,267 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:07:53] "POST /current_game/bbbc99b89c8ff50633b3da115d2cf5dd HTTP/1.1" 200 -
+2023-02-19 19:07:53,423 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:07:53] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:07:53,437 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:07:53] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:08:22,831 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:08:22] "POST /current_game/bbbc99b89c8ff50633b3da115d2cf5dd HTTP/1.1" 200 -
+2023-02-19 19:08:22,866 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:08:22] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:08:22,884 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:08:22] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:08:30,541 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:08:30] "POST /current_game/bbbc99b89c8ff50633b3da115d2cf5dd HTTP/1.1" 200 -
+2023-02-19 19:08:30,572 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:08:30] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:08:30,582 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:08:30] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:08:35,328 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:08:35] "POST /current_game/bbbc99b89c8ff50633b3da115d2cf5dd HTTP/1.1" 200 -
+2023-02-19 19:08:35,367 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:08:35] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:08:35,382 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:08:35] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:08:40,051 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:08:40] "POST /current_game/bbbc99b89c8ff50633b3da115d2cf5dd HTTP/1.1" 200 -
+2023-02-19 19:08:40,077 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:08:40] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:08:40,091 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:08:40] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:08:43,099 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:08:43] "POST /current_game/bbbc99b89c8ff50633b3da115d2cf5dd HTTP/1.1" 200 -
+2023-02-19 19:08:43,133 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:08:43] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:08:43,145 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:08:43] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:09:14,945 - Modules.Cfgmanager - INFO - Config_file: settings/main.yml succefully load
+2023-02-19 19:09:17,825 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:09:17] "[32mPOST /current_game/bbbc99b89c8ff50633b3da115d2cf5dd HTTP/1.1[0m" 302 -
+2023-02-19 19:09:17,835 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:09:17] "GET /current_game/b63c65922d8797476273a1d20251a316 HTTP/1.1" 200 -
+2023-02-19 19:09:18,093 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:09:18] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:09:18,107 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:09:18] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:10:38,526 - application.game - INFO - App start
+2023-02-19 19:10:38,551 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 19:10:38,551 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 19:10:49,161 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:10:49] "GET /current_game/b63c65922d8797476273a1d20251a316 HTTP/1.1" 200 -
+2023-02-19 19:10:49,321 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:10:49] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:10:49,328 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:10:49] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:10:53,162 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:10:53] "POST /current_game/b63c65922d8797476273a1d20251a316 HTTP/1.1" 200 -
+2023-02-19 19:10:53,199 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:10:53] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:10:53,215 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:10:53] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:10:57,992 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:10:57] "POST /current_game/b63c65922d8797476273a1d20251a316 HTTP/1.1" 200 -
+2023-02-19 19:10:58,021 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:10:58] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:10:58,030 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:10:58] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:11:06,866 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:11:06] "POST /current_game/b63c65922d8797476273a1d20251a316 HTTP/1.1" 200 -
+2023-02-19 19:11:06,912 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:11:06] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:11:06,919 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:11:06] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:11:09,697 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:11:09] "POST /current_game/b63c65922d8797476273a1d20251a316 HTTP/1.1" 200 -
+2023-02-19 19:11:09,730 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:11:09] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:11:09,739 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:11:09] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:11:12,144 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:11:12] "POST /current_game/b63c65922d8797476273a1d20251a316 HTTP/1.1" 200 -
+2023-02-19 19:11:12,175 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:11:12] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:11:12,190 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:11:12] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:11:14,306 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:11:14] "POST /current_game/b63c65922d8797476273a1d20251a316 HTTP/1.1" 200 -
+2023-02-19 19:11:14,343 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:11:14] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:11:14,356 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:11:14] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:11:17,714 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:11:17] "POST /current_game/b63c65922d8797476273a1d20251a316 HTTP/1.1" 200 -
+2023-02-19 19:11:17,747 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:11:17] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:11:17,764 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:11:17] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:11:18,469 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:11:18] "POST /current_game/b63c65922d8797476273a1d20251a316 HTTP/1.1" 200 -
+2023-02-19 19:11:18,494 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:11:18] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:11:18,508 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:11:18] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:11:24,209 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:11:24] "POST /current_game/b63c65922d8797476273a1d20251a316 HTTP/1.1" 200 -
+2023-02-19 19:11:24,236 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:11:24] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:11:24,252 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:11:24] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:11:25,396 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:11:25] "POST /current_game/b63c65922d8797476273a1d20251a316 HTTP/1.1" 200 -
+2023-02-19 19:11:25,427 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:11:25] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:11:25,435 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:11:25] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:11:48,731 - application.game - INFO - App start
+2023-02-19 19:11:48,756 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 19:11:48,756 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 19:12:01,479 - Modules.Cfgmanager - INFO - Config_file: settings/main.yml succefully load
+2023-02-19 19:12:01,669 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:12:01] "[32mPOST /current_game/b63c65922d8797476273a1d20251a316 HTTP/1.1[0m" 302 -
+2023-02-19 19:12:01,694 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:12:01] "GET /current_game/079f74b11e819e09b0d72379a50c55b2 HTTP/1.1" 200 -
+2023-02-19 19:12:01,915 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:12:01] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:12:01,924 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:12:01] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:12:05,918 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:12:05] "POST /current_game/079f74b11e819e09b0d72379a50c55b2 HTTP/1.1" 200 -
+2023-02-19 19:12:05,964 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:12:05] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:12:05,974 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:12:05] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:12:08,322 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:12:08] "POST /current_game/079f74b11e819e09b0d72379a50c55b2 HTTP/1.1" 200 -
+2023-02-19 19:12:08,357 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:12:08] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:12:08,370 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:12:08] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:12:10,493 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:12:10] "POST /current_game/079f74b11e819e09b0d72379a50c55b2 HTTP/1.1" 200 -
+2023-02-19 19:12:10,527 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:12:10] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:12:10,533 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:12:10] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:12:11,104 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:12:11] "POST /current_game/079f74b11e819e09b0d72379a50c55b2 HTTP/1.1" 200 -
+2023-02-19 19:12:11,137 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:12:11] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:12:11,151 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:12:11] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:12:11,682 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:12:11] "POST /current_game/079f74b11e819e09b0d72379a50c55b2 HTTP/1.1" 200 -
+2023-02-19 19:12:11,708 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:12:11] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:12:11,723 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:12:11] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:12:12,243 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:12:12] "POST /current_game/079f74b11e819e09b0d72379a50c55b2 HTTP/1.1" 200 -
+2023-02-19 19:12:12,267 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:12:12] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:12:12,276 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:12:12] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:12:12,763 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:12:12] "POST /current_game/079f74b11e819e09b0d72379a50c55b2 HTTP/1.1" 200 -
+2023-02-19 19:12:12,793 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:12:12] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:12:12,803 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:12:12] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:12:13,304 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:12:13] "POST /current_game/079f74b11e819e09b0d72379a50c55b2 HTTP/1.1" 200 -
+2023-02-19 19:12:13,334 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:12:13] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:12:13,353 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:12:13] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:12:13,874 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:12:13] "POST /current_game/079f74b11e819e09b0d72379a50c55b2 HTTP/1.1" 200 -
+2023-02-19 19:12:13,901 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:12:13] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:12:13,915 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:12:13] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:12:14,471 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:12:14] "POST /current_game/079f74b11e819e09b0d72379a50c55b2 HTTP/1.1" 200 -
+2023-02-19 19:12:14,496 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:12:14] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:12:14,511 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:12:14] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:14:09,413 - application.game - INFO - App start
+2023-02-19 19:14:09,437 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 19:14:09,437 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 19:14:21,847 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:14:21] "[32mGET / HTTP/1.1[0m" 302 -
+2023-02-19 19:14:26,582 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:14:26] "GET /new_game HTTP/1.1" 200 -
+2023-02-19 19:14:26,909 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:14:26] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:14:26,928 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:14:26] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:14:37,843 - Modules.Cfgmanager - INFO - Config_file: settings/main.yml succefully load
+2023-02-19 19:14:38,044 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:14:38] "[32mPOST /new_game HTTP/1.1[0m" 302 -
+2023-02-19 19:14:38,051 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:14:38] "GET /current_game/554059d0784a1c0c366f1f6437b4eac2 HTTP/1.1" 200 -
+2023-02-19 19:14:38,116 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:14:38] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:14:38,121 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:14:38] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:14:42,817 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:14:42] "POST /current_game/554059d0784a1c0c366f1f6437b4eac2 HTTP/1.1" 200 -
+2023-02-19 19:14:42,849 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:14:42] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:14:42,862 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:14:42] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:14:43,594 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:14:43] "POST /current_game/554059d0784a1c0c366f1f6437b4eac2 HTTP/1.1" 200 -
+2023-02-19 19:14:43,622 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:14:43] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:14:43,636 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:14:43] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:14:44,191 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:14:44] "POST /current_game/554059d0784a1c0c366f1f6437b4eac2 HTTP/1.1" 200 -
+2023-02-19 19:14:44,222 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:14:44] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:14:44,237 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:14:44] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:14:44,769 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:14:44] "POST /current_game/554059d0784a1c0c366f1f6437b4eac2 HTTP/1.1" 200 -
+2023-02-19 19:14:44,794 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:14:44] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:14:44,808 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:14:44] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:14:45,378 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:14:45] "POST /current_game/554059d0784a1c0c366f1f6437b4eac2 HTTP/1.1" 200 -
+2023-02-19 19:14:45,408 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:14:45] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:14:45,417 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:14:45] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:14:45,997 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:14:45] "POST /current_game/554059d0784a1c0c366f1f6437b4eac2 HTTP/1.1" 200 -
+2023-02-19 19:14:46,027 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:14:46] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:14:46,036 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:14:46] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:14:46,758 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:14:46] "POST /current_game/554059d0784a1c0c366f1f6437b4eac2 HTTP/1.1" 200 -
+2023-02-19 19:14:46,783 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:14:46] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:14:46,797 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:14:46] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:14:47,461 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:14:47] "POST /current_game/554059d0784a1c0c366f1f6437b4eac2 HTTP/1.1" 200 -
+2023-02-19 19:14:47,486 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:14:47] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:14:47,491 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:14:47] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:14:48,117 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:14:48] "POST /current_game/554059d0784a1c0c366f1f6437b4eac2 HTTP/1.1" 200 -
+2023-02-19 19:14:48,146 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:14:48] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:14:48,160 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:14:48] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:14:48,791 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:14:48] "POST /current_game/554059d0784a1c0c366f1f6437b4eac2 HTTP/1.1" 200 -
+2023-02-19 19:14:48,815 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:14:48] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:14:48,831 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:14:48] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:18:17,601 - application.game - INFO - App start
+2023-02-19 19:18:17,625 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 19:18:17,625 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 19:18:25,586 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:18:25] "[32mGET / HTTP/1.1[0m" 302 -
+2023-02-19 19:18:30,381 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:18:30] "GET /new_game HTTP/1.1" 200 -
+2023-02-19 19:18:30,898 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:18:30] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:18:30,919 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:18:30] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:18:36,797 - Modules.Cfgmanager - INFO - Config_file: settings/main.yml succefully load
+2023-02-19 19:18:36,965 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:18:36] "[32mPOST /new_game HTTP/1.1[0m" 302 -
+2023-02-19 19:18:36,971 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:18:36] "GET /current_game/efe4192753976f2b22e2c42bad271fc9 HTTP/1.1" 200 -
+2023-02-19 19:18:37,032 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:18:37] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:18:37,041 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:18:37] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:18:41,911 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:18:41] "POST /current_game/efe4192753976f2b22e2c42bad271fc9 HTTP/1.1" 200 -
+2023-02-19 19:18:41,938 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:18:41] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:18:41,955 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:18:41] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:19:45,503 - application.game - INFO - App start
+2023-02-19 19:19:45,526 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 19:19:45,526 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 19:19:55,093 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:19:55] "[32mGET / HTTP/1.1[0m" 302 -
+2023-02-19 19:19:58,028 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:19:58] "GET /new_game HTTP/1.1" 200 -
+2023-02-19 19:19:58,227 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:19:58] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:19:58,251 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:19:58] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:20:02,380 - Modules.Cfgmanager - INFO - Config_file: settings/main.yml succefully load
+2023-02-19 19:20:02,521 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:20:02] "[32mPOST /new_game HTTP/1.1[0m" 302 -
+2023-02-19 19:20:02,527 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:20:02] "GET /current_game/565f38943f7397e61aa37840d9aa631c HTTP/1.1" 200 -
+2023-02-19 19:20:02,567 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:20:02] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:20:02,581 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:20:02] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:20:06,461 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:20:06] "[35m[1mPOST /current_game/565f38943f7397e61aa37840d9aa631c HTTP/1.1[0m" 500 -
+2023-02-19 19:20:06,480 - werkzeug - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/application/views.py", line 39, in current_game
+    results = game.another_try(session_id, try_number)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/application/game.py", line 55, in another_try
+    checker = Checker.check(
+              ^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/Modules/Checker.py", line 9, in check
+    if word[i] == letter:
+       ^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+2023-02-19 19:20:06,488 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:20:06] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:20:06,492 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:20:06] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:20:34,041 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:20:34] "GET /current_game/565f38943f7397e61aa37840d9aa631c HTTP/1.1" 200 -
+2023-02-19 19:20:34,068 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:20:34] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:20:34,084 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:20:34] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:20:37,582 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:20:37] "[35m[1mPOST /current_game/565f38943f7397e61aa37840d9aa631c HTTP/1.1[0m" 500 -
+2023-02-19 19:20:37,585 - werkzeug - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/application/views.py", line 39, in current_game
+    results = game.another_try(session_id, try_number)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/application/game.py", line 55, in another_try
+    checker = Checker.check(
+              ^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/Modules/Checker.py", line 9, in check
+    if word[i] == letter:
+       ^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+2023-02-19 19:20:37,604 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:20:37] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:20:37,610 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:20:37] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:20:52,346 - application.game - INFO - App start
+2023-02-19 19:20:52,370 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 19:20:52,370 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 19:21:01,040 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:21:01] "[35m[1mPOST /current_game/565f38943f7397e61aa37840d9aa631c HTTP/1.1[0m" 500 -
+2023-02-19 19:21:01,057 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:21:01] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:21:01,058 - werkzeug - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/application/views.py", line 39, in current_game
+    results = game.another_try(session_id, try_number)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/application/game.py", line 55, in another_try
+    checker = Checker.check(
+              ^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/Modules/Checker.py", line 9, in check
+    if word[i] == letter:
+       ^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+2023-02-19 19:21:01,079 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:21:01] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:21:05,272 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:21:05] "[32mGET / HTTP/1.1[0m" 302 -
+2023-02-19 19:21:08,150 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:21:08] "GET /new_game HTTP/1.1" 200 -
+2023-02-19 19:21:08,309 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:21:08] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:21:08,320 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:21:08] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:21:13,420 - Modules.Cfgmanager - INFO - Config_file: settings/main.yml succefully load
+2023-02-19 19:21:13,478 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:21:13] "[32mPOST /new_game HTTP/1.1[0m" 302 -
+2023-02-19 19:21:13,484 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:21:13] "GET /current_game/5acf789623ea9aa78c22196628db32b4 HTTP/1.1" 200 -
+2023-02-19 19:21:13,523 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:21:13] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:21:13,539 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:21:13] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:21:17,152 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:21:17] "[35m[1mPOST /current_game/5acf789623ea9aa78c22196628db32b4 HTTP/1.1[0m" 500 -
+2023-02-19 19:21:17,155 - werkzeug - ERROR - Error on request:
+Traceback (most recent call last):
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 335, in run_wsgi
+    execute(self.server.app)
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/werkzeug/serving.py", line 322, in execute
+    application_iter = app(environ, start_response)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2548, in __call__
+    return self.wsgi_app(environ, start_response)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2528, in wsgi_app
+    response = self.handle_exception(e)
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 2525, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1822, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1820, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/lib/python3.11/site-packages/flask/app.py", line 1796, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/application/views.py", line 39, in current_game
+    results = game.another_try(session_id, try_number)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/application/game.py", line 55, in another_try
+    checker = Checker.check(
+              ^^^^^^^^^^^^^^
+  File "/Users/zakhar/code/PET-bagles/Modules/Checker.py", line 9, in check
+    if word[i] == letter:
+       ^^^^^^^^^^^^^^^^^^
+IndexError: string index out of range
+2023-02-19 19:21:17,169 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:21:17] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:21:17,178 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:21:17] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:27:24,371 - application.game - INFO - App start
+2023-02-19 19:27:24,394 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 19:27:24,394 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 19:27:30,717 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:27:30] "[32mGET / HTTP/1.1[0m" 302 -
+2023-02-19 19:27:43,927 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:27:43] "GET /new_game HTTP/1.1" 200 -
+2023-02-19 19:27:44,394 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:27:44] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:27:44,418 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:27:44] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:27:47,681 - Modules.Cfgmanager - INFO - Config_file: settings/main.yml succefully load
+2023-02-19 19:27:47,717 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:27:47] "[32mPOST /new_game HTTP/1.1[0m" 302 -
+2023-02-19 19:27:47,725 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:27:47] "GET /current_game/d714e0f91716032d2289ad0d7e633ae7 HTTP/1.1" 200 -
+2023-02-19 19:27:47,767 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:27:47] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:27:47,781 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:27:47] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:28:03,048 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:28:03] "POST /current_game/d714e0f91716032d2289ad0d7e633ae7 HTTP/1.1" 200 -
+2023-02-19 19:28:03,082 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:28:03] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:28:03,095 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:28:03] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:28:10,530 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:28:10] "POST /current_game/d714e0f91716032d2289ad0d7e633ae7 HTTP/1.1" 200 -
+2023-02-19 19:28:10,566 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:28:10] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:28:10,581 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:28:10] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:28:11,984 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:28:11] "POST /current_game/d714e0f91716032d2289ad0d7e633ae7 HTTP/1.1" 200 -
+2023-02-19 19:28:12,008 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:28:12] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:28:12,022 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:28:12] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:28:12,737 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:28:12] "POST /current_game/d714e0f91716032d2289ad0d7e633ae7 HTTP/1.1" 200 -
+2023-02-19 19:28:12,762 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:28:12] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:28:12,774 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:28:12] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:28:13,476 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:28:13] "POST /current_game/d714e0f91716032d2289ad0d7e633ae7 HTTP/1.1" 200 -
+2023-02-19 19:28:13,500 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:28:13] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:28:13,514 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:28:13] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:28:13,895 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:28:13] "POST /current_game/d714e0f91716032d2289ad0d7e633ae7 HTTP/1.1" 200 -
+2023-02-19 19:28:13,920 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:28:13] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:28:13,931 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:28:13] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:28:14,434 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:28:14] "POST /current_game/d714e0f91716032d2289ad0d7e633ae7 HTTP/1.1" 200 -
+2023-02-19 19:28:14,468 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:28:14] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:28:14,478 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:28:14] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:28:15,019 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:28:15] "POST /current_game/d714e0f91716032d2289ad0d7e633ae7 HTTP/1.1" 200 -
+2023-02-19 19:28:15,045 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:28:15] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:28:15,057 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:28:15] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:28:15,833 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:28:15] "POST /current_game/d714e0f91716032d2289ad0d7e633ae7 HTTP/1.1" 200 -
+2023-02-19 19:28:15,858 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:28:15] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:28:15,872 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:28:15] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:28:19,752 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:28:19] "POST /current_game/d714e0f91716032d2289ad0d7e633ae7 HTTP/1.1" 200 -
+2023-02-19 19:28:19,780 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:28:19] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:28:19,799 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:28:19] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:31:41,654 - application.game - INFO - App start
+2023-02-19 19:31:41,679 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 19:31:41,679 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 19:31:49,491 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:31:49] "[32mGET / HTTP/1.1[0m" 302 -
+2023-02-19 19:31:49,518 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:31:49] "GET /new_game HTTP/1.1" 200 -
+2023-02-19 19:31:49,928 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:31:49] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:31:49,963 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:31:49] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:31:51,176 - Modules.Cfgmanager - INFO - Config_file: settings/main.yml succefully load
+2023-02-19 19:31:51,217 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:31:51] "[32mPOST /new_game HTTP/1.1[0m" 302 -
+2023-02-19 19:31:51,223 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:31:51] "GET /current_game/fbd3c63e875767d6da7e46eb9414cfec HTTP/1.1" 200 -
+2023-02-19 19:31:51,260 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:31:51] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:31:51,275 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:31:51] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:31:54,910 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:31:54] "POST /current_game/fbd3c63e875767d6da7e46eb9414cfec HTTP/1.1" 200 -
+2023-02-19 19:31:54,941 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:31:54] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:31:54,959 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:31:54] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:31:56,657 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:31:56] "POST /current_game/fbd3c63e875767d6da7e46eb9414cfec HTTP/1.1" 200 -
+2023-02-19 19:31:56,689 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:31:56] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:31:56,706 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:31:56] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:31:57,206 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:31:57] "POST /current_game/fbd3c63e875767d6da7e46eb9414cfec HTTP/1.1" 200 -
+2023-02-19 19:31:57,231 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:31:57] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:31:57,246 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:31:57] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:31:57,689 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:31:57] "POST /current_game/fbd3c63e875767d6da7e46eb9414cfec HTTP/1.1" 200 -
+2023-02-19 19:31:57,723 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:31:57] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:31:57,738 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:31:57] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:31:58,150 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:31:58] "POST /current_game/fbd3c63e875767d6da7e46eb9414cfec HTTP/1.1" 200 -
+2023-02-19 19:31:58,173 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:31:58] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:31:58,188 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:31:58] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:31:58,577 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:31:58] "POST /current_game/fbd3c63e875767d6da7e46eb9414cfec HTTP/1.1" 200 -
+2023-02-19 19:31:58,600 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:31:58] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:31:58,614 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:31:58] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:31:59,007 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:31:59] "POST /current_game/fbd3c63e875767d6da7e46eb9414cfec HTTP/1.1" 200 -
+2023-02-19 19:31:59,031 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:31:59] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:31:59,039 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:31:59] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:31:59,477 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:31:59] "POST /current_game/fbd3c63e875767d6da7e46eb9414cfec HTTP/1.1" 200 -
+2023-02-19 19:31:59,501 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:31:59] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:31:59,515 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:31:59] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:32:00,410 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:32:00] "POST /current_game/fbd3c63e875767d6da7e46eb9414cfec HTTP/1.1" 200 -
+2023-02-19 19:32:00,442 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:32:00] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:32:00,455 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:32:00] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:32:05,451 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:32:05] "[32mPOST /current_game/fbd3c63e875767d6da7e46eb9414cfec HTTP/1.1[0m" 302 -
+2023-02-19 19:32:05,459 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:32:05] "GET /new_game/Sorry,%20but%20you%20lost.%20Guessed%20number%20was%20674 HTTP/1.1" 200 -
+2023-02-19 19:32:05,499 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:32:05] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:32:05,508 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:32:05] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:32:52,690 - Modules.Cfgmanager - INFO - Config_file: settings/main.yml succefully load
+2023-02-19 19:32:52,746 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:32:52] "[32mPOST /new_game/Sorry,%20but%20you%20lost.%20Guessed%20number%20was%20674 HTTP/1.1[0m" 302 -
+2023-02-19 19:32:52,753 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:32:52] "GET /current_game/e1f71574c8054db6e2ba15a3d1e5fc40 HTTP/1.1" 200 -
+2023-02-19 19:32:52,925 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:32:52] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:32:52,938 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:32:52] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:32:57,529 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:32:57] "POST /current_game/e1f71574c8054db6e2ba15a3d1e5fc40 HTTP/1.1" 200 -
+2023-02-19 19:32:57,565 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:32:57] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:32:57,579 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:32:57] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:34:19,603 - application.game - INFO - App start
+2023-02-19 19:34:19,627 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-19 19:34:19,627 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-19 19:34:25,611 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:34:25] "[32mGET / HTTP/1.1[0m" 302 -
+2023-02-19 19:34:25,640 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:34:25] "GET /new_game HTTP/1.1" 200 -
+2023-02-19 19:34:25,770 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:34:25] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:34:25,804 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:34:25] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:34:28,253 - Modules.Cfgmanager - INFO - Config_file: settings/main.yml succefully load
+2023-02-19 19:34:28,292 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:34:28] "[32mPOST /new_game HTTP/1.1[0m" 302 -
+2023-02-19 19:34:28,300 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:34:28] "GET /current_game/b72d63536d53b45f3d6550e9a6852715 HTTP/1.1" 200 -
+2023-02-19 19:34:28,338 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:34:28] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:34:28,355 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:34:28] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:34:31,171 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:34:31] "POST /current_game/b72d63536d53b45f3d6550e9a6852715 HTTP/1.1" 200 -
+2023-02-19 19:34:31,207 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:34:31] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:34:31,216 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:34:31] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:34:33,196 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:34:33] "POST /current_game/b72d63536d53b45f3d6550e9a6852715 HTTP/1.1" 200 -
+2023-02-19 19:34:33,230 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:34:33] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:34:33,243 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:34:33] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:34:33,833 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:34:33] "POST /current_game/b72d63536d53b45f3d6550e9a6852715 HTTP/1.1" 200 -
+2023-02-19 19:34:33,855 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:34:33] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:34:33,871 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:34:33] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:34:34,388 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:34:34] "POST /current_game/b72d63536d53b45f3d6550e9a6852715 HTTP/1.1" 200 -
+2023-02-19 19:34:34,412 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:34:34] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:34:34,427 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:34:34] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:34:34,894 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:34:34] "POST /current_game/b72d63536d53b45f3d6550e9a6852715 HTTP/1.1" 200 -
+2023-02-19 19:34:34,920 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:34:34] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:34:34,933 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:34:34] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:34:35,345 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:34:35] "POST /current_game/b72d63536d53b45f3d6550e9a6852715 HTTP/1.1" 200 -
+2023-02-19 19:34:35,370 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:34:35] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:34:35,382 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:34:35] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:34:35,838 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:34:35] "POST /current_game/b72d63536d53b45f3d6550e9a6852715 HTTP/1.1" 200 -
+2023-02-19 19:34:35,861 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:34:35] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:34:35,879 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:34:35] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:34:36,302 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:34:36] "POST /current_game/b72d63536d53b45f3d6550e9a6852715 HTTP/1.1" 200 -
+2023-02-19 19:34:36,329 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:34:36] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:34:36,340 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:34:36] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:34:37,038 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:34:37] "POST /current_game/b72d63536d53b45f3d6550e9a6852715 HTTP/1.1" 200 -
+2023-02-19 19:34:37,062 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:34:37] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:34:37,079 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:34:37] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-19 19:34:41,313 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:34:41] "[32mPOST /current_game/b72d63536d53b45f3d6550e9a6852715 HTTP/1.1[0m" 302 -
+2023-02-19 19:34:41,321 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:34:41] "GET /new_game/Sorry,%20but%20you%20lost.%20Guessed%20number%20was%20938 HTTP/1.1" 200 -
+2023-02-19 19:34:41,354 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:34:41] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-19 19:34:41,368 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:34:41] "GET /current_game/favicon.ico HTTP/1.1" 200 -

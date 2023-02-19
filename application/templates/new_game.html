@@ -4,6 +4,12 @@
 
 <h1>Press New game to start</h1>
 
+{% if message is defined %}
+
+<h2>{{ message }}</h2>
+
+{% endif %}
+
 <form action="" method="post">
     {{ form.hidden_tag() }}
     <p>

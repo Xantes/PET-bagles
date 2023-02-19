@@ -17,5 +17,14 @@ class Sessions(db.Model):
     finish = db.Column(db.Boolean)
 
 
+class Languages(db.Model):
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    language = db.Column(db.String(40))
+    greetings_msg = db.Column(db.String(128))
+    win_msg = db.Column(db.String(128))
+    fail_msg = db.Column(db.String(128))
+    last_try_msg = db.Column(db.String(128))
+
+
 with app.app_context():
     db.create_all()
