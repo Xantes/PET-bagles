@@ -1644,3 +1644,53 @@ IndexError: string index out of range
 2023-02-20 19:14:20,682 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 19:14:20] "[36mGET /static/cover.css HTTP/1.1[0m" 304 -
 2023-02-20 19:14:20,721 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 19:14:20] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
 2023-02-20 19:14:20,725 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 19:14:20] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-20 20:13:14,006 - application.game - INFO - App start
+2023-02-20 20:13:14,015 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-20 20:13:14,015 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-20 20:13:14,015 - werkzeug - INFO -  * Restarting with stat
+2023-02-20 20:13:14,225 - application.game - INFO - App start
+2023-02-20 20:13:14,230 - werkzeug - WARNING -  * Debugger is active!
+2023-02-20 20:13:14,239 - werkzeug - INFO -  * Debugger PIN: 115-487-645
+2023-02-20 20:13:21,987 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 20:13:21] "[32mPOST /current_game/2b35f3c886b0a808828abd76242cbc85 HTTP/1.1[0m" 302 -
+2023-02-20 20:13:22,029 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 20:13:22] "GET /new_game/Sorry,%20but%20you%20lose.%20Guessed%20number%20was%20931 HTTP/1.1" 200 -
+2023-02-20 20:13:22,055 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 20:13:22] "GET /static/cover.css HTTP/1.1" 200 -
+2023-02-20 20:13:22,082 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 20:13:22] "GET /static/bagle.png HTTP/1.1" 200 -
+2023-02-20 20:13:22,396 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 20:13:22] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-20 20:13:22,458 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 20:13:22] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-20 20:13:28,226 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 20:13:28] "GET /new_game HTTP/1.1" 200 -
+2023-02-20 20:13:28,240 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 20:13:28] "[36mGET /static/cover.css HTTP/1.1[0m" 304 -
+2023-02-20 20:13:28,243 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 20:13:28] "[36mGET /static/bagle.png HTTP/1.1[0m" 304 -
+2023-02-20 20:13:28,275 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 20:13:28] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-20 20:13:28,279 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 20:13:28] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-20 20:13:32,578 - Modules.Cfgmanager - INFO - Config_file: settings/main.yml succefully load
+2023-02-20 20:13:32,595 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 20:13:32] "[32mPOST /new_game HTTP/1.1[0m" 302 -
+2023-02-20 20:13:32,603 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 20:13:32] "GET /current_game/8dfc5c64a4e4e34b03be21b3938b1cca HTTP/1.1" 200 -
+2023-02-20 20:13:32,622 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 20:13:32] "[36mGET /static/cover.css HTTP/1.1[0m" 304 -
+2023-02-20 20:13:32,623 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 20:13:32] "[36mGET /static/bagle.png HTTP/1.1[0m" 304 -
+2023-02-20 20:13:32,651 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 20:13:32] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-20 20:13:32,659 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 20:13:32] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-20 20:13:36,544 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 20:13:36] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-20 20:13:36,547 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 20:13:36] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-20 20:14:17,647 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 20:14:17] "GET /new_game HTTP/1.1" 200 -
+2023-02-20 20:14:17,661 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 20:14:17] "[36mGET /static/cover.css HTTP/1.1[0m" 304 -
+2023-02-20 20:14:17,663 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 20:14:17] "[36mGET /static/bagle.png HTTP/1.1[0m" 304 -
+2023-02-20 20:14:17,694 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 20:14:17] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-20 20:14:17,698 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 20:14:17] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-20 20:14:34,797 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 20:14:34] "GET /new_game HTTP/1.1" 200 -
+2023-02-20 20:14:34,809 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 20:14:34] "[36mGET /static/cover.css HTTP/1.1[0m" 304 -
+2023-02-20 20:14:34,830 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 20:14:34] "[36mGET /static/bagle.png HTTP/1.1[0m" 304 -
+2023-02-20 20:14:35,871 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 20:14:35] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-20 20:14:35,879 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 20:14:35] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-20 20:14:55,761 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 20:14:55] "GET /new_game HTTP/1.1" 200 -
+2023-02-20 20:14:55,772 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 20:14:55] "[36mGET /static/cover.css HTTP/1.1[0m" 304 -
+2023-02-20 20:14:55,774 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 20:14:55] "[36mGET /static/bagle.png HTTP/1.1[0m" 304 -
+2023-02-20 20:14:55,802 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 20:14:55] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-20 20:14:55,807 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 20:14:55] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-20 20:15:00,500 - Modules.Cfgmanager - INFO - Config_file: settings/main.yml succefully load
+2023-02-20 20:15:00,525 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 20:15:00] "[32mPOST /new_game HTTP/1.1[0m" 302 -
+2023-02-20 20:15:00,533 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 20:15:00] "GET /current_game/590424dc33616fe82075a5865a6e14d9 HTTP/1.1" 200 -
+2023-02-20 20:15:00,551 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 20:15:00] "[36mGET /static/cover.css HTTP/1.1[0m" 304 -
+2023-02-20 20:15:00,552 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 20:15:00] "[36mGET /static/bagle.png HTTP/1.1[0m" 304 -
+2023-02-20 20:15:00,583 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 20:15:00] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-20 20:15:00,587 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 20:15:00] "GET /current_game/favicon.ico HTTP/1.1" 200 -
