@@ -2,22 +2,31 @@
 
 {% block new_game %}
 
-<h1>Press New game to start</h1>
 
-{% if message is defined %}
+<main class="px-3">
+    <h1>Bagles. Me </h1>
+    {% if message is defined %}
 
-<h2>{{ message }}</h2>
-
-{% endif %}
-
-<form action="" method="post">
-    {{ form.hidden_tag() }}
-    <p>
-        {{ form.start.label }}
-        {{ form.start }}
+    <p class="lead">
+        {{ message }}
     </p>
 
-</form>
+    {% endif %}
+
+    <p class="lead">
+    <form action="" method="post">
+        {{ form.hidden_tag() }}
+        <p>
+            {{ form.start(class="btn btn-lg btn-light fw-bold border-white bg-white") }}
+        </p>
+    </form>
+    </p>
+</main>
+
+
+
+
+
 
 
 {% endblock %}

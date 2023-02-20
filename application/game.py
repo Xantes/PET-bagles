@@ -49,7 +49,7 @@ def another_try(session_id, try_number) -> dict:
 
     if sql_response.tries and not sql_response.finish:
         sql_response.tries = sql_response.tries - 1
-        if sql_response.number == str(try_number):
+        if sql_response.number == int(try_number):
             sql_response.finish = True
         elif sql_response.tries:
             checker = Checker.check(
@@ -75,7 +75,7 @@ def make_message(sql_response: Sessions) -> str:
     if sql_response.finish and sql_response.tries:
         message = f'Congratulations. You won the game with {10 - sql_response.tries} tries'
     elif not sql_response.finish and not sql_response.tries:
-        message = f'Sorry, but you lost. Guessed number was {sql_response.number}'
+        message = f'Sorry, but you lose. Guessed number was {sql_response.number}'
     elif sql_response.tries == 1:
         message = 'This is last try'
 

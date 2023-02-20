@@ -2,35 +2,55 @@
 
 {% block game %}
 
-<div class="container">
+{% from 'bootstrap5/form.html' import render_form, render_field %}
 
-
-    <form action="" method="post" name="try" style="color:white">
-        {{ form.hidden_tag() }}
-        <h1 class="h3 mb-3 font-weight-normal">
-            Try the Number
-        </h1>
-
-        {% if results.checker_response is defined %}
-        {% for result in results.checker_response %} <p> {{ result }}</p>
+<div class="container text-center">
+    <h1 class="h3 mb-3 font-weight-normal">
+        Try guess the Number
+    </h1>
+    {% if results.checker_response is defined %}
+    <div class="row justify-content-center">
+        {% for result in results.checker_response %}
+        <div class="col-2">
+            {{ result }}
+        </div>
         {% endfor %}
-        {% endif %}
-        {% if results.message is defined %}
-        {{ results.message }}
-        {% endif %}
-        <br>
-        <p>
-            Tries left: {{ results.tries}}
-        </p>
-        <p>
-            {{ form.try_number.label() }}
-            {{ form.try_number(class="form-control") }} <br>
-        </p>
-        <p>
-            {{ form.submit_button(class="btn btn-lg btn-block btn-primary", value="Try!") }} <br>
-        </p>
+    </div>
+    {% endif %}
 
-    </form>
+    {% if results.message is defined %}
+    <p class="lead">
+        {{ results.message }}
+    </p>
+    {% endif %}
+    <br>
+
+    <p class="lead">
+        Tries left:
+        {% if results.tries is defined %}
+        {{ results.tries}}
+        {% else %}
+        10
+        {% endif %}
+
+    </p>
+    <div class="row g-3 align-items-center">
+        <form action="" method="post">
+            {{ form.hidden_tag() }}
+            <div class="col-auto">
+                <p class="lead">
+                    {{ form.try_number(class='form-control') }}
+                </p>
+            </div>
+            <p>
+                {{ render_field(form.submit_button, class="btn btn-lg btn-block btn-primary")}}
+            </p>
+
+        </form>
+    </div>
+
+
+
 </div>
 
 {% endblock %}

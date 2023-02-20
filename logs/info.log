@@ -1568,3 +1568,79 @@ IndexError: string index out of range
 2023-02-19 19:34:41,321 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:34:41] "GET /new_game/Sorry,%20but%20you%20lost.%20Guessed%20number%20was%20938 HTTP/1.1" 200 -
 2023-02-19 19:34:41,354 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:34:41] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
 2023-02-19 19:34:41,368 - werkzeug - INFO - 127.0.0.1 - - [19/Feb/2023 19:34:41] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-20 16:50:43,141 - application.game - INFO - App start
+2023-02-20 16:50:43,161 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-20 16:50:43,161 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-20 16:50:43,162 - werkzeug - INFO -  * Restarting with stat
+2023-02-20 16:50:43,361 - application.game - INFO - App start
+2023-02-20 16:50:43,368 - werkzeug - WARNING -  * Debugger is active!
+2023-02-20 16:50:43,374 - werkzeug - INFO -  * Debugger PIN: 115-487-645
+2023-02-20 16:51:02,881 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 16:51:02] "[32mGET / HTTP/1.1[0m" 302 -
+2023-02-20 16:51:02,902 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 16:51:02] "[35m[1mGET /new_game HTTP/1.1[0m" 500 -
+2023-02-20 16:51:04,496 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 16:51:04] "[32mGET / HTTP/1.1[0m" 302 -
+2023-02-20 16:51:04,510 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 16:51:04] "[35m[1mGET /new_game HTTP/1.1[0m" 500 -
+2023-02-20 16:51:04,557 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 16:51:04] "GET /new_game?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+2023-02-20 16:51:04,561 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 16:51:04] "GET /new_game?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+2023-02-20 16:51:04,578 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 16:51:04] "[36mGET /new_game?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-02-20 16:51:04,594 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 16:51:04] "[36mGET /new_game?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1[0m" 304 -
+2023-02-20 17:06:27,220 - application.game - INFO - App start
+2023-02-20 17:06:27,238 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-20 17:06:27,238 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-20 17:06:27,238 - werkzeug - INFO -  * Restarting with stat
+2023-02-20 17:06:27,441 - application.game - INFO - App start
+2023-02-20 17:06:27,448 - werkzeug - WARNING -  * Debugger is active!
+2023-02-20 17:06:27,452 - werkzeug - INFO -  * Debugger PIN: 115-487-645
+2023-02-20 17:06:37,604 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 17:06:37] "[32mGET / HTTP/1.1[0m" 302 -
+2023-02-20 17:06:37,624 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 17:06:37] "GET /new_game HTTP/1.1" 200 -
+2023-02-20 17:06:37,645 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 17:06:37] "[32mGET /cover.css HTTP/1.1[0m" 302 -
+2023-02-20 17:06:37,646 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 17:06:37] "[33mGET /docs/5.3/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+2023-02-20 17:06:37,671 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 17:06:37] "GET /current_game/cover.css HTTP/1.1" 200 -
+2023-02-20 17:06:37,989 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 17:06:37] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-20 17:06:37,994 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 17:06:37] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-20 17:06:42,628 - Modules.Cfgmanager - INFO - Config_file: settings/main.yml succefully load
+2023-02-20 17:06:42,660 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 17:06:42] "[32mPOST /new_game HTTP/1.1[0m" 302 -
+2023-02-20 17:06:42,666 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 17:06:42] "GET /current_game/624fa530475b77c7c5f8800a07f03a31 HTTP/1.1" 200 -
+2023-02-20 17:06:42,682 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 17:06:42] "[33mGET /docs/5.3/dist/css/bootstrap.min.css HTTP/1.1[0m" 404 -
+2023-02-20 17:06:42,684 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 17:06:42] "GET /current_game/cover.css HTTP/1.1" 200 -
+2023-02-20 17:06:42,722 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 17:06:42] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-20 17:06:42,725 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 17:06:42] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-20 19:12:07,789 - application.game - INFO - App start
+2023-02-20 19:12:07,795 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-20 19:12:07,796 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-20 19:12:25,121 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 19:12:25] "[32mGET / HTTP/1.1[0m" 302 -
+2023-02-20 19:12:25,166 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 19:12:25] "GET /new_game HTTP/1.1" 200 -
+2023-02-20 19:12:25,176 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 19:12:25] "[36mGET /static/cover.css HTTP/1.1[0m" 304 -
+2023-02-20 19:12:25,928 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 19:12:25] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-20 19:12:26,062 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 19:12:26] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-20 19:12:27,450 - Modules.Cfgmanager - INFO - Config_file: settings/main.yml succefully load
+2023-02-20 19:12:27,495 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 19:12:27] "[32mPOST /new_game HTTP/1.1[0m" 302 -
+2023-02-20 19:12:27,501 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 19:12:27] "GET /current_game/4f0a3cf021d783275b6c7f6436be74c4 HTTP/1.1" 200 -
+2023-02-20 19:12:27,517 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 19:12:27] "[36mGET /static/cover.css HTTP/1.1[0m" 304 -
+2023-02-20 19:12:27,562 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 19:12:27] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-20 19:12:27,566 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 19:12:27] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-20 19:12:57,191 - application.game - INFO - App start
+2023-02-20 19:12:57,198 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+2023-02-20 19:12:57,198 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2023-02-20 19:13:17,098 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 19:13:17] "POST /current_game/4f0a3cf021d783275b6c7f6436be74c4 HTTP/1.1" 200 -
+2023-02-20 19:13:17,129 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 19:13:17] "[36mGET /static/cover.css HTTP/1.1[0m" 304 -
+2023-02-20 19:13:17,191 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 19:13:17] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-20 19:13:17,195 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 19:13:17] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-20 19:13:43,611 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 19:13:43] "[32mPOST /current_game/4f0a3cf021d783275b6c7f6436be74c4 HTTP/1.1[0m" 302 -
+2023-02-20 19:13:43,626 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 19:13:43] "GET /new_game/Congratulations.%20You%20won%20the%20game%20with%202%20tries HTTP/1.1" 200 -
+2023-02-20 19:13:43,650 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 19:13:43] "[36mGET /static/cover.css HTTP/1.1[0m" 304 -
+2023-02-20 19:13:43,872 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 19:13:43] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-20 19:13:43,879 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 19:13:43] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-20 19:14:12,015 - Modules.Cfgmanager - INFO - Config_file: settings/main.yml succefully load
+2023-02-20 19:14:12,042 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 19:14:12] "[32mPOST /new_game/Congratulations.%20You%20won%20the%20game%20with%202%20tries HTTP/1.1[0m" 302 -
+2023-02-20 19:14:12,051 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 19:14:12] "GET /current_game/831938684cc19f7d26bbcffaae1e01bb HTTP/1.1" 200 -
+2023-02-20 19:14:12,069 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 19:14:12] "[36mGET /static/cover.css HTTP/1.1[0m" 304 -
+2023-02-20 19:14:12,100 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 19:14:12] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-20 19:14:12,106 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 19:14:12] "GET /current_game/favicon.ico HTTP/1.1" 200 -
+2023-02-20 19:14:20,666 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 19:14:20] "POST /current_game/831938684cc19f7d26bbcffaae1e01bb HTTP/1.1" 200 -
+2023-02-20 19:14:20,682 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 19:14:20] "[36mGET /static/cover.css HTTP/1.1[0m" 304 -
+2023-02-20 19:14:20,721 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 19:14:20] "[32mGET /favicon.ico HTTP/1.1[0m" 302 -
+2023-02-20 19:14:20,725 - werkzeug - INFO - 127.0.0.1 - - [20/Feb/2023 19:14:20] "GET /current_game/favicon.ico HTTP/1.1" 200 -
