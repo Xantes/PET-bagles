@@ -1,0 +1,40 @@
+version: '3'
+
+services:
+
+  nginx:
+    build: ../app/
+    command: python3 run.py
+    ports:
+      - "80:80"
+    depends_on:
+      db:
+        condition: service_started
+    restart: unless-stopped
+    container_name: nginx_container
+    networks:
+      - local_network
+
+  db:
+    build: postgre/
+    volumes:
+      - .:/var/lib/postgresql/data
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_is_ready -U admin -d bagles_db" ]
+      interval: 10s
+      timeout: 20s
+      retries: 5
+      start_period: 10s
+    restart: unless-stopped
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 4g
+    container_name: postgre_container
+    networks:
+      - local_network
+
+networks:
+  local_network:
+    driver: bridge

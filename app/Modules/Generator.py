@@ -1,9 +1,8 @@
-from pickle import FALSE
 from random import shuffle
 
 
 class Generator():
-    def __init__(self, set='0123456789', max_letters=3) -> None:
+    def __init__(self, set: str = '0123456789', max_letters: int = 3):
         self.set = list(set)
         self.max_letters = max_letters
 

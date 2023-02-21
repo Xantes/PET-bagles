@@ -16,3 +16,4 @@ pyvenv.cfg
 **/__pycache__
 logs/
 bin/
+containers/pgdata

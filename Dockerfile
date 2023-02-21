@@ -1,5 +1,0 @@
-FROM postgres:alpine
-
-ENV POSTGRES_USER admin
-ENV POSTGRES_PASSWORD 1111
-

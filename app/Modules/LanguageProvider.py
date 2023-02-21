@@ -1,5 +1,5 @@
 class LanguageProvider():
-    def __init__(self) -> None:
+    def __init__(self):
         self.providers = {}
 
     def add_language(self, language_name, language):

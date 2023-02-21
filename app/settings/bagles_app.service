@@ -1,0 +1,12 @@
+[Unit]
+Description=uWSGI instance to server Bagles app
+After=network.target
+
+[Service]
+User=root
+Group=root
+WorkingDirectory=/bagles_app
+ExecStart=/usr/bin/uwsgi --ini /bagles_app/settings/wsgi.ini
+
+[Install]
+WantedBy=multi-user.target

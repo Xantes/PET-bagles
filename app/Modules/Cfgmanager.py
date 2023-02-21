@@ -1,12 +1,13 @@
 from yaml import safe_load
 import logging
 from pathlib import Path
+from typing import Dict, Any
 
 
 class CfgManager():
-    def __init__(self, cfg_file=None, default_conf=None) -> None:
-        self.config = None
-        self.default_conf = default_conf
+    def __init__(self, cfg_file: str = '', default_conf: Dict[Any, Any] = {}) -> None:
+        self.config: Dict[Any, Any] = {}
+        self.default_conf: Dict = default_conf
         self.logger = logging.getLogger(__name__)
         if cfg_file:
             if Path(cfg_file).exists():
