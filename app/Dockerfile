@@ -18,7 +18,7 @@ RUN cp settings/bagles_app.service /etc/systemd/system/
 
 COPY settings/bagles_app /etc/nginx/conf.d/bagles_app.conf
 
-RUN rm /etc/nginx/conf.d/default
+RUN rm /etc/nginx/conf.d/default.conf
 
 RUN systemctl enable bagles_app && systemctl start bagles_app
 
