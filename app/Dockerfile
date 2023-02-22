@@ -22,8 +22,8 @@ RUN rm /etc/nginx/conf.d/default.conf
 
 RUN service nginx stop 
 
-RUN service nginx start
-
 RUN systemctl enable bagles_app
 
 RUN systemctl start bagles_app
+
+RUN service nginx start
