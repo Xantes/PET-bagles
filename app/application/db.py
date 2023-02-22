@@ -12,7 +12,7 @@ class Sessions(db.Model):
     id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     session_id = db.Column(db.String(40), unique=True)
     user = db.Column(db.Text)
-    number = db.Column(db.Integer)
+    number = db.Column(db.String(3))
     tries = db.Column(db.Integer)
     finish = db.Column(db.Boolean)
 
