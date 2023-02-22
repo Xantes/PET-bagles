@@ -1,6 +1,6 @@
 server {
-    listen 80;
-    # server_name bagles.fun www.bagles.fun;
+    listen 0.0.0.0:80;
+    server_name bagles.fun www.bagles.fun;
 
     location / {
         include uwsgi_params;
