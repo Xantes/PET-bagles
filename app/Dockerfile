@@ -24,6 +24,4 @@ RUN service nginx stop
 
 RUN systemctl enable bagles_app
 
-RUN systemctl start bagles_app
-
 RUN service nginx start
