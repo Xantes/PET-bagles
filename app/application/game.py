@@ -49,7 +49,7 @@ def another_try(session_id, try_number) -> dict:
 
     if sql_response.tries and not sql_response.finish:
         sql_response.tries = sql_response.tries - 1
-        if sql_response.number == int(try_number):
+        if sql_response.number == try_number:
             sql_response.finish = True
         elif sql_response.tries:
             checker = Checker.check(
