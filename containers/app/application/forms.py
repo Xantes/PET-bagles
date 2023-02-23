@@ -5,7 +5,7 @@ from wtforms.validators import Length, DataRequired, NumberRange
 
 class TryForm(FlaskForm):
     try_number = StringField(label=None,
-                             validators=[Length(min=3, max=3), NumberRange(min=0, max=999), DataRequired()])
+                             validators=[Length(min=3, max=3), DataRequired()])
     submit_button = SubmitField(label='Try')
 
 
