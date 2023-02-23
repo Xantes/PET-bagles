@@ -1,9 +1,0 @@
-server {
-    listen 0.0.0.0:80;
-    server_name bagles.fun www.bagles.fun;
-
-    location / {
-        include uwsgi_params;
-        uwsgi_pass unix:///bagles_app/bagles_app.sock;
-    }
-}

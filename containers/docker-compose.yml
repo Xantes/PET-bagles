@@ -1,17 +1,41 @@
 version: '3'
 
 services:
-
-  nginx:
-    build: ../app/
-    command: python3 run.py
-    ports:
-      - "80:80"
+  application:
+    build: app/
     depends_on:
       db:
-        condition: service_started
+        condition: service_healthy
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 1g
+    healthcheck:
+      test: curl --fail http://localhost:8000 || exit 1
+      interval: 10s
+      timeout: 10s
+      retries: 5
+      start_period: 10s
     restart: unless-stopped
-    container_name: nginx_container
+    container_name: app_container
+    networks:
+      - local_network
+
+  web:
+    build: nginx/
+    depends_on:
+      application:
+        condition: service_healthy
+    deploy:
+      resources:
+        limits:
+          cpus: '1'
+          memory: 1g
+    ports:
+      - 80:80
+    restart: unless-stopped
+    container_name: web_container
     networks:
       - local_network
 
@@ -20,7 +44,7 @@ services:
     volumes:
       - .:/var/lib/postgresql/data
     healthcheck:
-      test: [ "CMD-SHELL", "pg_is_ready -U admin -d bagles_db" ]
+      test: [ "CMD-SHELL", "pg_isready -U admin -d bagles_db" ]
       interval: 10s
       timeout: 20s
       retries: 5
@@ -30,8 +54,8 @@ services:
       resources:
         limits:
           cpus: '1'
-          memory: 4g
-    container_name: postgre_container
+          memory: 1g
+    container_name: db_container
     networks:
       - local_network
 
