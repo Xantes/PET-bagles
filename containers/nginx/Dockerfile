@@ -6,6 +6,3 @@ RUN apt-get update && \
     adduser --system --group bagles_app
 
 COPY bagles_app.conf /etc/nginx/conf.d/
-
-USER bagles_app
-
